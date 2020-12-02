@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@octokit/rest": "^18.0.9",
+    "json-pointer": "^0.6.1",
+    "node-fetch": "^2.6.1",
+    "node-w3capi": "^1.9.0",
+    "octokit": "^1.0.0-hello-world"
+  }
+}
