@@ -1,0 +1,27 @@
+{
+    "_embedded": {
+        "specifications": [
+            {
+                "shortlink": "https:\/\/www.w3.org\/TR\/webrtc\/",
+                "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+                "shortname": "webrtc",
+                "editor-draft": "https:\/\/w3c.github.io\/webrtc-pc\/",
+                "_links": {
+                    "series": {
+                        "href": "https:\/\/api.w3.org\/specification-series\/webrtc"
+                    }
+                }
+            },
+            {
+                "shortlink": "https:\/\/www.w3.org\/TR\/capture-scenarios\/",
+                "title": "MediaStream Capture Scenarios",
+                "shortname": "capture-scenarios",
+                "_links": {
+                    "series": {
+                        "href": "https:\/\/api.w3.org\/specification-series\/capture-scenarios"
+                    }
+                }
+            }
+        ]
+    }
+}

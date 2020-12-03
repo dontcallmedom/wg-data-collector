@@ -1,0 +1,15 @@
+[
+  {
+    "number": 1,
+    "title": "Test issue",
+    "html_url": "https://example.org/issue/1",
+    "labels": []
+  },
+  {
+    "number": 2,
+    "title": "Test PR",
+    "pull_request": {},
+    "html_url": "https://example.org/pull/2",
+    "labels": []
+  }
+]

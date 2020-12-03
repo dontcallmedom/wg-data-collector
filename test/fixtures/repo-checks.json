@@ -1,0 +1,10 @@
+[
+  {
+    "html_url": "https://example.org/check/1",
+    "conclusion": "success",
+    "output": {
+      "title": "CI check",
+      "summary": "Succeeded"
+    }
+  }
+]

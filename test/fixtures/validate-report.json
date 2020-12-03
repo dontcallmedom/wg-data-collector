@@ -1,0 +1,25 @@
+{
+  "groups":
+  {
+    "42":
+    {
+      "repos":[ {"fullName": "acme/repo"} ]
+    }
+  },
+  "repos": [
+    {
+      "name": "repo",
+      "owner": { "login": "acme" },
+      "homepageUrl": null,
+      "description": "The Spec of Life, the Universe and Everything",
+      "defaultBranch": {
+        "name": "main"
+      },
+      "w3c": {
+        "repo-type": "rec-track"
+      }
+    }],
+  "errors": [
+
+  ]
+}
