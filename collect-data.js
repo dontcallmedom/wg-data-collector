@@ -1,26 +1,15 @@
-const fetch=require("node-fetch");
-
 const wg = require("./lib/wg");
-const serialize = require("./lib/serialize");
 const repo = require("./lib/repo");
 const wpt = require("./lib/wpt");
 const idl = require("./lib/idl");
 const confluence = require("./lib/confluence");
-const {fetchJSON} = require("./lib/utils");
-
 
 // WG id
 const gid = process.argv[2];
 
 
 // WG configurations
-const wgConfig = {
-  47318: {
-    confluence: true,
-    ignoreIssuesLabels: ["ready for pr", "editorial", "pr exists", "icebox"],
-    ignoreRepoErrors: ["unprotectedbranchforadmin", "norequiredreview", "nocodeofconduct"]
-  }
-};
+const wgConfig = require("./group-config.json");
 
 const results = {specifications:[], config: wgConfig[gid]};
 
