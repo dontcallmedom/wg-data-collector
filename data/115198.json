@@ -1,0 +1,3612 @@
+{
+  "specifications": [
+    {
+      "tr": "https://www.w3.org/TR/media-capabilities/",
+      "title": "Media Capabilities",
+      "shortname": "media-capabilities",
+      "seriesShortname": "media-capabilities",
+      "editorDraft": "https://w3c.github.io/media-capabilities/",
+      "trStatus": "WD",
+      "latestVersion": {
+        "href": "https://www.w3.org/TR/2020/WD-media-capabilities-20200130/",
+        "date": "2020-01-30",
+        "recTrack": true
+      },
+      "recTrack": true,
+      "repo": "w3c/media-capabilities",
+      "wptShortname": "media-capabilities",
+      "milestones": [
+        {
+          "status": "FPWD",
+          "date": "2020-03-30"
+        },
+        {
+          "status": "CR",
+          "date": "2020-06-30"
+        },
+        {
+          "status": "PR",
+          "date": "2021-03-30"
+        }
+      ],
+      "hasPrPreview": true,
+      "editingTool": "bikeshed",
+      "defaultBranch": "master",
+      "idl": {
+        "interfaces": {
+          "MediaCapabilities": 5,
+          "Navigator": 1,
+          "WorkerNavigator": 1
+        },
+        "dictionaries": {
+          "MediaConfiguration": 2,
+          "MediaDecodingConfiguration": 2,
+          "MediaEncodingConfiguration": 1,
+          "VideoConfiguration": 9,
+          "AudioConfiguration": 5,
+          "MediaCapabilitiesKeySystemConfiguration": 7,
+          "KeySystemTrackConfiguration": 2,
+          "MediaCapabilitiesInfo": 3,
+          "MediaCapabilitiesDecodingInfo": 2,
+          "MediaCapabilitiesEncodingInfo": 1
+        },
+        "enums": {
+          "MediaDecodingType": 2,
+          "MediaEncodingType": 2,
+          "HdrMetadataType": 3,
+          "ColorGamut": 3,
+          "TransferFunction": 3
+        },
+        "total": 54
+      },
+      "implementationGaps": [],
+      "implementationSummary": false,
+      "wpt": {
+        "files": 7,
+        "assertions": 182,
+        "impl": {
+          "chrome": {
+            "passes": 176,
+            "total": 182,
+            "class": "passes-lots"
+          },
+          "firefox": {
+            "passes": 149,
+            "total": 182,
+            "class": "passes-lots"
+          },
+          "safari": {
+            "passes": 93,
+            "total": 182,
+            "class": "passes-a-few"
+          }
+        },
+        "issues": [],
+        "prs": []
+      },
+      "issues": {
+        "recent": [],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/160",
+            "number": 160,
+            "title": "Trimming down the AudioConfiguration",
+            "labels": [],
+            "created_at": "2020-11-25T23:35:49Z",
+            "updated_at": "2020-12-03T12:37:38Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/159",
+            "number": 159,
+            "title": "Expand support for querying webrtc capabilities",
+            "labels": [],
+            "created_at": "2020-10-21T02:46:54Z",
+            "updated_at": "2020-10-28T10:47:07Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/157",
+            "number": 157,
+            "title": "text tracks not supported",
+            "labels": [],
+            "created_at": "2020-07-13T15:59:42Z",
+            "updated_at": "2020-11-26T03:28:54Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/153",
+            "number": 153,
+            "title": "Add consideration for MediaDecodingConfiguration to 2.3.3. Check Encrypted Decoding Support algorithm",
+            "labels": [],
+            "created_at": "2020-06-23T05:33:07Z",
+            "updated_at": "2020-06-29T17:59:12Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/152",
+            "number": 152,
+            "title": "Discuss how to reconcile colorGamut & transferFunction with ISO 23001-8:2016",
+            "labels": [],
+            "created_at": "2020-03-31T20:39:43Z",
+            "updated_at": "2020-06-08T15:40:11Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/147",
+            "number": 147,
+            "title": "Add examples for decodingInfo()",
+            "labels": [],
+            "created_at": "2020-01-28T00:31:25Z",
+            "updated_at": "2020-03-13T16:29:57Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/146",
+            "number": 146,
+            "title": "*Configuration needs to be subclassed into *DecodingConfiguration",
+            "labels": [],
+            "created_at": "2020-01-24T02:08:33Z",
+            "updated_at": "2020-01-28T06:51:26Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/141",
+            "number": 141,
+            "title": "Conformance against enumerated assertions in VideoConfiguration",
+            "labels": [],
+            "created_at": "2019-12-14T00:09:26Z",
+            "updated_at": "2019-12-16T15:23:11Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/136",
+            "number": 136,
+            "title": "DolbyVision HDR Metadata",
+            "labels": [],
+            "created_at": "2019-10-18T05:40:46Z",
+            "updated_at": "2020-12-02T17:26:17Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/135",
+            "number": 135,
+            "title": "hdrSupported - Screen.video or simply Screen?",
+            "labels": [],
+            "created_at": "2019-10-03T01:54:21Z",
+            "updated_at": "2019-10-30T13:50:45Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/133",
+            "number": 133,
+            "title": "Should the VideoDisplayConfiguration width & height be in CSS or device pixels",
+            "labels": [],
+            "created_at": "2019-09-28T00:43:45Z",
+            "updated_at": "2019-10-17T01:40:07Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/126",
+            "number": 126,
+            "title": "Cleanup encodingInfo()",
+            "labels": [],
+            "created_at": "2019-07-30T00:50:34Z",
+            "updated_at": "2019-07-30T00:51:40Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/119",
+            "number": 119,
+            "title": "Add Support for Querying HDR & 4K Video Display Capabilities",
+            "labels": [],
+            "created_at": "2019-07-10T21:14:38Z",
+            "updated_at": "2019-07-30T05:40:01Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/116",
+            "number": 116,
+            "title": "No need to link to both HTML LS and HTML 5.x",
+            "labels": [],
+            "created_at": "2019-06-24T19:14:31Z",
+            "updated_at": "2019-06-24T19:14:31Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/113",
+            "number": 113,
+            "title": "multiple stream decoding",
+            "labels": [],
+            "created_at": "2019-05-02T07:08:35Z",
+            "updated_at": "2019-05-25T00:39:58Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/102",
+            "number": 102,
+            "title": "Discuss transition() ergonomics",
+            "labels": [
+              {
+                "id": 541044568,
+                "node_id": "MDU6TGFiZWw1NDEwNDQ1Njg=",
+                "url": "https://api.github.com/repos/w3c/media-capabilities/labels/ergonomics",
+                "name": "ergonomics",
+                "color": "ffbbbb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-10-11T22:29:20Z",
+            "updated_at": "2019-08-27T15:48:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/99",
+            "number": 99,
+            "title": "MCAPI Support for MPEG CMAF Supplemental Data",
+            "labels": [
+              {
+                "id": 1087978843,
+                "node_id": "MDU6TGFiZWwxMDg3OTc4ODQz",
+                "url": "https://api.github.com/repos/w3c/media-capabilities/labels/cmaf",
+                "name": "cmaf",
+                "color": "1374ad",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2018-09-11T22:38:04Z",
+            "updated_at": "2018-10-11T20:23:47Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/98",
+            "number": 98,
+            "title": "MCAPI Support for MIME Type Profiles subparameter in order to support CMAF, etc.",
+            "labels": [
+              {
+                "id": 1087978843,
+                "node_id": "MDU6TGFiZWwxMDg3OTc4ODQz",
+                "url": "https://api.github.com/repos/w3c/media-capabilities/labels/cmaf",
+                "name": "cmaf",
+                "color": "1374ad",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2018-09-11T22:37:28Z",
+            "updated_at": "2020-03-18T21:28:35Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/95",
+            "number": 95,
+            "title": "Frame rate configuration",
+            "labels": [],
+            "created_at": "2018-09-06T18:45:11Z",
+            "updated_at": "2018-10-11T22:37:54Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/88",
+            "number": 88,
+            "title": "Dictionary pattern may be incompatible with WebIDL",
+            "labels": [
+              {
+                "id": 427458574,
+                "node_id": "MDU6TGFiZWw0Mjc0NTg1NzQ=",
+                "url": "https://api.github.com/repos/w3c/media-capabilities/labels/bug",
+                "name": "bug",
+                "color": "ee0701",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-06-18T20:41:47Z",
+            "updated_at": "2019-10-24T21:31:41Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/86",
+            "number": 86,
+            "title": "Consider making MediaCapabilities a member of media element instead of navigator",
+            "labels": [],
+            "created_at": "2018-06-05T20:06:26Z",
+            "updated_at": "2018-06-07T10:07:20Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/79",
+            "number": 79,
+            "title": "Define the meaning for CBR and VBR more precisely.",
+            "labels": [],
+            "created_at": "2018-04-19T09:30:09Z",
+            "updated_at": "2019-09-19T07:31:47Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/73",
+            "number": 73,
+            "title": "Better define `channels` in AudioConfiguration",
+            "labels": [
+              {
+                "id": 541106679,
+                "node_id": "MDU6TGFiZWw1NDExMDY2Nzk=",
+                "url": "https://api.github.com/repos/w3c/media-capabilities/labels/decoding",
+                "name": "decoding",
+                "color": "c2e0c6",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-03-06T13:22:01Z",
+            "updated_at": "2020-03-12T14:40:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/69",
+            "number": 69,
+            "title": "Use mimesniff's \"parse a MIME type\" to parse the contentType member",
+            "labels": [
+              {
+                "id": 427458576,
+                "node_id": "MDU6TGFiZWw0Mjc0NTg1NzY=",
+                "url": "https://api.github.com/repos/w3c/media-capabilities/labels/enhancement",
+                "name": "enhancement",
+                "color": "84b6eb",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-02-27T09:29:39Z",
+            "updated_at": "2018-10-26T22:40:56Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/44",
+            "number": 44,
+            "title": "powerEfficient needs some objective definition",
+            "labels": [],
+            "created_at": "2017-06-08T23:21:13Z",
+            "updated_at": "2018-11-13T22:43:57Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/issues/43",
+            "number": 43,
+            "title": "Need a mechanism for considering device conditions that affect media capabilities",
+            "labels": [],
+            "created_at": "2017-06-08T23:19:44Z",
+            "updated_at": "2018-10-09T00:46:25Z"
+          }
+        ]
+      },
+      "prs": {
+        "open": [
+          {
+            "href": "https://github.com/w3c/media-capabilities/pull/158",
+            "number": 158,
+            "title": "Extend MediaCapabilities API to WebRTC",
+            "labels": [],
+            "created_at": "2020-10-19T11:39:47Z",
+            "updated_at": "2020-10-19T11:39:55Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-capabilities/pulls/158",
+              "html_url": "https://github.com/w3c/media-capabilities/pull/158",
+              "diff_url": "https://github.com/w3c/media-capabilities/pull/158.diff",
+              "patch_url": "https://github.com/w3c/media-capabilities/pull/158.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/pull/107",
+            "number": 107,
+            "title": "Mark keySystemAccess as default to null and optional and robustness properties as no longer defaulting.",
+            "labels": [],
+            "created_at": "2018-11-23T02:12:26Z",
+            "updated_at": "2019-11-14T19:28:51Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-capabilities/pulls/107",
+              "html_url": "https://github.com/w3c/media-capabilities/pull/107",
+              "diff_url": "https://github.com/w3c/media-capabilities/pull/107.diff",
+              "patch_url": "https://github.com/w3c/media-capabilities/pull/107.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/pull/105",
+            "number": 105,
+            "title": "Use \"parse a MIME type\" to check validity.",
+            "labels": [],
+            "created_at": "2018-10-29T18:42:11Z",
+            "updated_at": "2018-11-22T22:08:21Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-capabilities/pulls/105",
+              "html_url": "https://github.com/w3c/media-capabilities/pull/105",
+              "diff_url": "https://github.com/w3c/media-capabilities/pull/105.diff",
+              "patch_url": "https://github.com/w3c/media-capabilities/pull/105.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/pull/78",
+            "number": 78,
+            "title": "Define the meaning for CBR and VBR more precisely.",
+            "labels": [],
+            "created_at": "2018-03-26T23:03:14Z",
+            "updated_at": "2018-11-22T22:08:21Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-capabilities/pulls/78",
+              "html_url": "https://github.com/w3c/media-capabilities/pull/78",
+              "diff_url": "https://github.com/w3c/media-capabilities/pull/78.diff",
+              "patch_url": "https://github.com/w3c/media-capabilities/pull/78.patch"
+            }
+          }
+        ],
+        "stalled": [
+          {
+            "href": "https://github.com/w3c/media-capabilities/pull/107",
+            "number": 107,
+            "title": "Mark keySystemAccess as default to null and optional and robustness properties as no longer defaulting.",
+            "labels": [],
+            "created_at": "2018-11-23T02:12:26Z",
+            "updated_at": "2019-11-14T19:28:51Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-capabilities/pulls/107",
+              "html_url": "https://github.com/w3c/media-capabilities/pull/107",
+              "diff_url": "https://github.com/w3c/media-capabilities/pull/107.diff",
+              "patch_url": "https://github.com/w3c/media-capabilities/pull/107.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/pull/105",
+            "number": 105,
+            "title": "Use \"parse a MIME type\" to check validity.",
+            "labels": [],
+            "created_at": "2018-10-29T18:42:11Z",
+            "updated_at": "2018-11-22T22:08:21Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-capabilities/pulls/105",
+              "html_url": "https://github.com/w3c/media-capabilities/pull/105",
+              "diff_url": "https://github.com/w3c/media-capabilities/pull/105.diff",
+              "patch_url": "https://github.com/w3c/media-capabilities/pull/105.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/media-capabilities/pull/78",
+            "number": 78,
+            "title": "Define the meaning for CBR and VBR more precisely.",
+            "labels": [],
+            "created_at": "2018-03-26T23:03:14Z",
+            "updated_at": "2018-11-22T22:08:21Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-capabilities/pulls/78",
+              "html_url": "https://github.com/w3c/media-capabilities/pull/78",
+              "diff_url": "https://github.com/w3c/media-capabilities/pull/78.diff",
+              "patch_url": "https://github.com/w3c/media-capabilities/pull/78.patch"
+            }
+          }
+        ]
+      },
+      "check_runs": [],
+      "repoErrors": [
+        "invalidcontributing",
+        "nocodeofconduct",
+        "unprotectedbranchforadmin",
+        "norequiredreview"
+      ]
+    },
+    {
+      "tr": "https://www.w3.org/TR/mediasession/",
+      "title": "Media Session Standard",
+      "shortname": "mediasession",
+      "seriesShortname": "mediasession",
+      "editorDraft": "https://w3c.github.io/mediasession/",
+      "trStatus": "WD",
+      "latestVersion": {
+        "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/",
+        "date": "2020-01-30",
+        "recTrack": true
+      },
+      "recTrack": true,
+      "repo": "w3c/mediasession",
+      "wptShortname": "mediasession",
+      "milestones": [
+        {
+          "status": "FPWD",
+          "date": "2020-03-30"
+        },
+        {
+          "status": "CR",
+          "date": "2020-12-30"
+        },
+        {
+          "status": "PR",
+          "date": "2021-06-30"
+        }
+      ],
+      "hasPrPreview": true,
+      "editingTool": "bikeshed",
+      "defaultBranch": "master",
+      "idl": {
+        "interfaces": {
+          "MediaSession": 8,
+          "MediaMetadata": 6,
+          "Navigator": 1
+        },
+        "dictionaries": {
+          "MediaMetadataInit": 4,
+          "MediaImage": 3,
+          "MediaPositionState": 3,
+          "MediaSessionActionDetails": 4
+        },
+        "enums": {
+          "MediaSessionPlaybackState": 3,
+          "MediaSessionAction": 9
+        },
+        "total": 41
+      },
+      "implementationGaps": [],
+      "implementationSummary": false,
+      "wpt": {
+        "files": 5,
+        "assertions": 89,
+        "impl": {
+          "chrome": {
+            "passes": 87,
+            "total": 89,
+            "class": "passes-lots"
+          },
+          "firefox": {
+            "passes": 89,
+            "total": 89,
+            "class": "passes-all"
+          },
+          "safari": {
+            "passes": 63,
+            "total": 89,
+            "class": "passes-half"
+          }
+        },
+        "issues": [
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/18492",
+            "number": 18492,
+            "title": "Media Session actions are untestable",
+            "labels": [
+              {
+                "id": 45230790,
+                "node_id": "MDU6TGFiZWw0NTIzMDc5MA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/infra",
+                "name": "infra",
+                "color": "fbca04",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 536145901,
+                "node_id": "MDU6TGFiZWw1MzYxNDU5MDE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/mediasession",
+                "name": "mediasession",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 693964558,
+                "node_id": "MDU6TGFiZWw2OTM5NjQ1NTg=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/priority:backlog",
+                "name": "priority:backlog",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 744682968,
+                "node_id": "MDU6TGFiZWw3NDQ2ODI5Njg=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/testdriver.js",
+                "name": "testdriver.js",
+                "color": "fef2c0",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 590832316,
+                "node_id": "MDU6TGFiZWw1OTA4MzIzMTY=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/type:untestable",
+                "name": "type:untestable",
+                "color": "eb6420",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2019-08-16T09:00:59Z",
+            "updated_at": "2019-08-27T10:24:52Z"
+          }
+        ],
+        "prs": []
+      },
+      "issues": {
+        "recent": [],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/mediasession/issues/257",
+            "number": 257,
+            "title": "Define behavior of seekOffset when negative",
+            "labels": [],
+            "created_at": "2020-04-21T17:29:39Z",
+            "updated_at": "2020-04-22T13:06:24Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/256",
+            "number": 256,
+            "title": "Consider adding a `kind` property to `MediaImage`",
+            "labels": [],
+            "created_at": "2020-04-17T18:35:14Z",
+            "updated_at": "2020-04-22T13:11:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/254",
+            "number": 254,
+            "title": "Why seek operations in MediaSessionActionDetails are both nullable and optioanal?",
+            "labels": [],
+            "created_at": "2020-03-23T19:35:16Z",
+            "updated_at": "2020-03-23T19:35:16Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/252",
+            "number": 252,
+            "title": "Issue for the defintion of `durtaion` in `MediaPositionState`",
+            "labels": [],
+            "created_at": "2020-03-12T18:46:41Z",
+            "updated_at": "2020-03-12T20:34:52Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/250",
+            "number": 250,
+            "title": "MediaPositionState.duration should be \"unrestricted\"",
+            "labels": [],
+            "created_at": "2020-02-17T15:48:20Z",
+            "updated_at": "2020-02-17T15:48:20Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/248",
+            "number": 248,
+            "title": "naming issues",
+            "labels": [],
+            "created_at": "2020-01-31T15:06:07Z",
+            "updated_at": "2020-02-04T09:21:12Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/244",
+            "number": 244,
+            "title": "Work without an <audio> element",
+            "labels": [],
+            "created_at": "2019-11-16T11:50:34Z",
+            "updated_at": "2020-08-24T01:04:19Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/241",
+            "number": 241,
+            "title": "MediaMetadata artwork getter is defined to return a new object each time",
+            "labels": [],
+            "created_at": "2019-10-02T17:05:20Z",
+            "updated_at": "2019-10-02T17:05:20Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/239",
+            "number": 239,
+            "title": "Why is MediaMetadata nullable?",
+            "labels": [],
+            "created_at": "2019-09-20T19:48:19Z",
+            "updated_at": "2019-09-25T14:48:23Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/237",
+            "number": 237,
+            "title": "The freezing in the artwork getter is broken",
+            "labels": [],
+            "created_at": "2019-09-17T21:26:57Z",
+            "updated_at": "2019-10-09T15:34:01Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/233",
+            "number": 233,
+            "title": "Add \"seek to start\" and \"seek to live\" actions",
+            "labels": [],
+            "created_at": "2019-09-02T15:57:05Z",
+            "updated_at": "2019-09-20T05:22:42Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/232",
+            "number": 232,
+            "title": "Use within a PWA context / Service Worker to replicate native audio apps?",
+            "labels": [],
+            "created_at": "2019-08-25T12:16:26Z",
+            "updated_at": "2019-08-29T17:06:37Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/229",
+            "number": 229,
+            "title": "Add a metadata change event",
+            "labels": [],
+            "created_at": "2019-08-20T00:31:11Z",
+            "updated_at": "2019-08-20T00:34:55Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/228",
+            "number": 228,
+            "title": "Add a way of detecting which actions a UA supports",
+            "labels": [],
+            "created_at": "2019-08-19T22:08:43Z",
+            "updated_at": "2019-08-21T19:12:44Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/227",
+            "number": 227,
+            "title": "Initialize dictionary members where the dictionaries are instantiated",
+            "labels": [],
+            "created_at": "2019-08-15T03:32:40Z",
+            "updated_at": "2019-08-15T17:45:40Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/221",
+            "number": 221,
+            "title": "Integrate Media Session with Feature Policy",
+            "labels": [],
+            "created_at": "2019-07-13T16:54:21Z",
+            "updated_at": "2019-08-20T00:36:35Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/220",
+            "number": 220,
+            "title": "Intent to Migrate: Media Session",
+            "labels": [],
+            "created_at": "2019-07-09T09:59:34Z",
+            "updated_at": "2019-07-19T01:14:44Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/219",
+            "number": 219,
+            "title": "Add a like/dislike action",
+            "labels": [],
+            "created_at": "2019-06-27T22:38:56Z",
+            "updated_at": "2019-06-27T22:38:56Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/213",
+            "number": 213,
+            "title": "Does media session work with WebAudio?",
+            "labels": [],
+            "created_at": "2019-03-21T21:52:55Z",
+            "updated_at": "2019-08-28T16:16:30Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/212",
+            "number": 212,
+            "title": "Add a skip action",
+            "labels": [],
+            "created_at": "2019-03-12T22:13:12Z",
+            "updated_at": "2019-03-13T17:12:14Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/205",
+            "number": 205,
+            "title": "Support seekbackward and seekforward custom amount of time",
+            "labels": [],
+            "created_at": "2018-11-21T12:48:54Z",
+            "updated_at": "2019-03-11T13:33:52Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/199",
+            "number": 199,
+            "title": "Telephony use cases",
+            "labels": [],
+            "created_at": "2017-08-09T15:19:34Z",
+            "updated_at": "2017-08-10T03:43:46Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/196",
+            "number": 196,
+            "title": "Subtitles/captions/lyrics",
+            "labels": [
+              {
+                "id": 441252380,
+                "node_id": "MDU6TGFiZWw0NDEyNTIzODA=",
+                "url": "https://api.github.com/repos/w3c/mediasession/labels/P3",
+                "name": "P3",
+                "color": "0e8a16",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 173538791,
+                "node_id": "MDU6TGFiZWwxNzM1Mzg3OTE=",
+                "url": "https://api.github.com/repos/w3c/mediasession/labels/enhancement",
+                "name": "enhancement",
+                "color": "84b6eb",
+                "default": true,
+                "description": null
+              },
+              {
+                "id": 441255951,
+                "node_id": "MDU6TGFiZWw0NDEyNTU5NTE=",
+                "url": "https://api.github.com/repos/w3c/mediasession/labels/metadata",
+                "name": "metadata",
+                "color": "bfd4f2",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2017-04-10T23:44:16Z",
+            "updated_at": "2017-04-11T10:37:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/195",
+            "number": 195,
+            "title": "Audio visualization",
+            "labels": [],
+            "created_at": "2017-04-10T23:28:13Z",
+            "updated_at": "2017-04-10T23:28:13Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/194",
+            "number": 194,
+            "title": "Allow metadata and actions to be routed to different frames?",
+            "labels": [],
+            "created_at": "2017-04-10T10:10:34Z",
+            "updated_at": "2017-04-10T10:10:34Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/issues/183",
+            "number": 183,
+            "title": "Let MediaMetadata#artwork return the same value (unless set to a new value)",
+            "labels": [],
+            "created_at": "2017-02-13T11:48:30Z",
+            "updated_at": "2017-02-13T11:48:30Z"
+          }
+        ]
+      },
+      "prs": {
+        "open": [
+          {
+            "href": "https://github.com/w3c/mediasession/pull/258",
+            "number": 258,
+            "title": "Editorial: Align with Web IDL specification",
+            "labels": [],
+            "created_at": "2020-08-18T16:33:38Z",
+            "updated_at": "2020-08-18T16:34:01Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediasession/pulls/258",
+              "html_url": "https://github.com/w3c/mediasession/pull/258",
+              "diff_url": "https://github.com/w3c/mediasession/pull/258.diff",
+              "patch_url": "https://github.com/w3c/mediasession/pull/258.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/pull/255",
+            "number": 255,
+            "title": "Fix 252",
+            "labels": [],
+            "created_at": "2020-03-26T02:14:56Z",
+            "updated_at": "2020-03-26T02:15:04Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediasession/pulls/255",
+              "html_url": "https://github.com/w3c/mediasession/pull/255",
+              "diff_url": "https://github.com/w3c/mediasession/pull/255.diff",
+              "patch_url": "https://github.com/w3c/mediasession/pull/255.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/pull/243",
+            "number": 243,
+            "title": "Update type of MediaMetadata's artwork",
+            "labels": [],
+            "created_at": "2019-10-11T18:24:23Z",
+            "updated_at": "2019-10-11T18:24:31Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediasession/pulls/243",
+              "html_url": "https://github.com/w3c/mediasession/pull/243",
+              "diff_url": "https://github.com/w3c/mediasession/pull/243.diff",
+              "patch_url": "https://github.com/w3c/mediasession/pull/243.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/pull/226",
+            "number": 226,
+            "title": "Make MediaSessionActionDetails members non-nullable",
+            "labels": [],
+            "created_at": "2019-08-15T03:11:55Z",
+            "updated_at": "2019-08-15T17:14:35Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediasession/pulls/226",
+              "html_url": "https://github.com/w3c/mediasession/pull/226",
+              "diff_url": "https://github.com/w3c/mediasession/pull/226.diff",
+              "patch_url": "https://github.com/w3c/mediasession/pull/226.patch"
+            }
+          }
+        ],
+        "stalled": [
+          {
+            "href": "https://github.com/w3c/mediasession/pull/258",
+            "number": 258,
+            "title": "Editorial: Align with Web IDL specification",
+            "labels": [],
+            "created_at": "2020-08-18T16:33:38Z",
+            "updated_at": "2020-08-18T16:34:01Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediasession/pulls/258",
+              "html_url": "https://github.com/w3c/mediasession/pull/258",
+              "diff_url": "https://github.com/w3c/mediasession/pull/258.diff",
+              "patch_url": "https://github.com/w3c/mediasession/pull/258.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/pull/255",
+            "number": 255,
+            "title": "Fix 252",
+            "labels": [],
+            "created_at": "2020-03-26T02:14:56Z",
+            "updated_at": "2020-03-26T02:15:04Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediasession/pulls/255",
+              "html_url": "https://github.com/w3c/mediasession/pull/255",
+              "diff_url": "https://github.com/w3c/mediasession/pull/255.diff",
+              "patch_url": "https://github.com/w3c/mediasession/pull/255.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/pull/243",
+            "number": 243,
+            "title": "Update type of MediaMetadata's artwork",
+            "labels": [],
+            "created_at": "2019-10-11T18:24:23Z",
+            "updated_at": "2019-10-11T18:24:31Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediasession/pulls/243",
+              "html_url": "https://github.com/w3c/mediasession/pull/243",
+              "diff_url": "https://github.com/w3c/mediasession/pull/243.diff",
+              "patch_url": "https://github.com/w3c/mediasession/pull/243.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/mediasession/pull/226",
+            "number": 226,
+            "title": "Make MediaSessionActionDetails members non-nullable",
+            "labels": [],
+            "created_at": "2019-08-15T03:11:55Z",
+            "updated_at": "2019-08-15T17:14:35Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediasession/pulls/226",
+              "html_url": "https://github.com/w3c/mediasession/pull/226",
+              "diff_url": "https://github.com/w3c/mediasession/pull/226.diff",
+              "patch_url": "https://github.com/w3c/mediasession/pull/226.patch"
+            }
+          }
+        ]
+      },
+      "check_runs": [],
+      "repoErrors": [
+        "invalidcontributing",
+        "nocodeofconduct",
+        "unprotectedbranchforadmin",
+        "norequiredreview"
+      ]
+    },
+    {
+      "tr": "https://www.w3.org/TR/picture-in-picture/",
+      "title": "Picture-in-Picture",
+      "shortname": "picture-in-picture",
+      "seriesShortname": "picture-in-picture",
+      "editorDraft": "https://w3c.github.io/picture-in-picture/",
+      "trStatus": "WD",
+      "latestVersion": {
+        "href": "https://www.w3.org/TR/2020/WD-picture-in-picture-20200130/",
+        "date": "2020-01-30",
+        "recTrack": true
+      },
+      "recTrack": true,
+      "repo": "w3c/picture-in-picture",
+      "wptShortname": "picture-in-picture",
+      "milestones": [
+        {
+          "status": "FPWD",
+          "date": "2020-03-30"
+        },
+        {
+          "status": "CR",
+          "date": "2020-12-30"
+        },
+        {
+          "status": "PR",
+          "date": "2021-06-30"
+        }
+      ],
+      "hasPrPreview": true,
+      "editingTool": "bikeshed",
+      "defaultBranch": "master",
+      "idl": {
+        "interfaces": {
+          "PictureInPictureWindow": 4,
+          "PictureInPictureEvent": 3,
+          "HTMLVideoElement": 5,
+          "Document": 2
+        },
+        "dictionaries": {
+          "PictureInPictureEventInit": 1
+        },
+        "enums": {},
+        "total": 15
+      },
+      "implementationGaps": [],
+      "implementationSummary": false,
+      "wpt": {
+        "files": 12,
+        "assertions": 108,
+        "impl": {
+          "chrome": {
+            "passes": 108,
+            "total": 108,
+            "class": "passes-all"
+          },
+          "firefox": {
+            "passes": 39,
+            "total": 108,
+            "class": "passes-hardly"
+          },
+          "safari": {
+            "passes": 84,
+            "total": 108,
+            "class": "passes-half"
+          }
+        },
+        "issues": [
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/14177",
+            "number": 14177,
+            "title": "Timeout in mediastream Picture-in-Picture test",
+            "labels": [
+              {
+                "id": 822893418,
+                "node_id": "MDU6TGFiZWw4MjI4OTM0MTg=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/picture-in-picture",
+                "name": "picture-in-picture",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-11-21T19:25:00Z",
+            "updated_at": "2018-11-23T09:22:13Z"
+          }
+        ],
+        "prs": []
+      },
+      "issues": {
+        "recent": [],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/194",
+            "number": 194,
+            "title": "Adjust Volume",
+            "labels": [],
+            "created_at": "2020-10-14T12:16:50Z",
+            "updated_at": "2020-11-16T23:54:56Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/193",
+            "number": 193,
+            "title": "Add progress bar and allow to control it in PiP",
+            "labels": [],
+            "created_at": "2020-09-23T00:22:23Z",
+            "updated_at": "2020-11-17T00:20:50Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/191",
+            "number": 191,
+            "title": "Remove monkey patch sections",
+            "labels": [],
+            "created_at": "2020-08-13T16:08:29Z",
+            "updated_at": "2020-08-13T16:08:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/184",
+            "number": 184,
+            "title": "Publish Candidate Recommendation",
+            "labels": [],
+            "created_at": "2020-06-08T15:44:57Z",
+            "updated_at": "2020-11-09T08:08:48Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/182",
+            "number": 182,
+            "title": "Should include / require spoofing protections",
+            "labels": [
+              {
+                "id": 583128053,
+                "node_id": "MDU6TGFiZWw1ODMxMjgwNTM=",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/enhancement",
+                "name": "enhancement",
+                "color": "84b6eb",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2020-06-02T21:31:23Z",
+            "updated_at": "2020-07-22T20:31:15Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/179",
+            "number": 179,
+            "title": "Who is responsible for the user interface for PiP?",
+            "labels": [
+              {
+                "id": 1831534515,
+                "node_id": "MDU6TGFiZWwxODMxNTM0NTE1",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/a11y-needs-resolution",
+                "name": "a11y-needs-resolution",
+                "color": "ea7472",
+                "default": false,
+                "description": "Issue the Accessibility Group has raised and looks for a response on."
+              }
+            ],
+            "created_at": "2020-04-08T14:51:21Z",
+            "updated_at": "2020-06-17T15:59:40Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/172",
+            "number": 172,
+            "title": "Rename CSS pseudo-class :picture-in-picture",
+            "labels": [],
+            "created_at": "2019-11-22T10:34:31Z",
+            "updated_at": "2020-06-08T15:39:17Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/143",
+            "number": 143,
+            "title": "Need a way to detect input limitations",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-05-28T17:08:14Z",
+            "updated_at": "2019-05-28T17:08:14Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/139",
+            "number": 139,
+            "title": "Feature detection for v2",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-05-06T22:13:40Z",
+            "updated_at": "2020-10-12T17:22:04Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/129",
+            "number": 129,
+            "title": "Decide on a name for `requestPictureInPicture` for v2",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-04-22T16:15:13Z",
+            "updated_at": "2019-04-22T16:15:13Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/115",
+            "number": 115,
+            "title": "Provide a clear definition of autoPictureInPictureElement",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-01-25T13:58:21Z",
+            "updated_at": "2020-08-10T21:51:56Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/113",
+            "number": 113,
+            "title": "Picture-in-Picture for any Element",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-01-16T14:21:22Z",
+            "updated_at": "2020-11-07T13:22:16Z"
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/issues/99",
+            "number": 99,
+            "title": "Should PiP video removed from the DOM leave PiP?",
+            "labels": [],
+            "created_at": "2018-11-07T16:22:11Z",
+            "updated_at": "2020-11-05T09:48:10Z"
+          }
+        ]
+      },
+      "prs": {
+        "open": [
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/196",
+            "number": 196,
+            "title": "Rename Feature Policy to Permissions Policy",
+            "labels": [],
+            "created_at": "2020-10-20T17:22:42Z",
+            "updated_at": "2020-10-20T17:22:50Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/196",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/196",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/196.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/196.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/190",
+            "number": 190,
+            "title": "Provide a clear definition of autoPictureInPictureElement",
+            "labels": [],
+            "created_at": "2020-06-17T12:07:14Z",
+            "updated_at": "2020-06-23T19:03:33Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/190",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/190",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/190.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/190.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/181",
+            "number": 181,
+            "title": "Rename CSS pseudo-class :picture-in-picture",
+            "labels": [],
+            "created_at": "2020-05-19T12:47:36Z",
+            "updated_at": "2020-08-12T08:53:55Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/181",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/181",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/181.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/181.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/136",
+            "number": 136,
+            "title": "Define API for arbitrary content",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-05-03T22:12:40Z",
+            "updated_at": "2019-07-19T21:37:49Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/136",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/136",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/136.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/136.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/134",
+            "number": 134,
+            "title": "Define request element picture in picture algorithm",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-04-30T22:21:53Z",
+            "updated_at": "2019-05-24T20:57:02Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/134",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/134",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/134.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/134.patch"
+            }
+          }
+        ],
+        "stalled": [
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/190",
+            "number": 190,
+            "title": "Provide a clear definition of autoPictureInPictureElement",
+            "labels": [],
+            "created_at": "2020-06-17T12:07:14Z",
+            "updated_at": "2020-06-23T19:03:33Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/190",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/190",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/190.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/190.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/181",
+            "number": 181,
+            "title": "Rename CSS pseudo-class :picture-in-picture",
+            "labels": [],
+            "created_at": "2020-05-19T12:47:36Z",
+            "updated_at": "2020-08-12T08:53:55Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/181",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/181",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/181.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/181.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/136",
+            "number": 136,
+            "title": "Define API for arbitrary content",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-05-03T22:12:40Z",
+            "updated_at": "2019-07-19T21:37:49Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/136",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/136",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/136.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/136.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/picture-in-picture/pull/134",
+            "number": 134,
+            "title": "Define request element picture in picture algorithm",
+            "labels": [
+              {
+                "id": 1326850989,
+                "node_id": "MDU6TGFiZWwxMzI2ODUwOTg5",
+                "url": "https://api.github.com/repos/w3c/picture-in-picture/labels/v2",
+                "name": "v2",
+                "color": "ce5885",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2019-04-30T22:21:53Z",
+            "updated_at": "2019-05-24T20:57:02Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/picture-in-picture/pulls/134",
+              "html_url": "https://github.com/w3c/picture-in-picture/pull/134",
+              "diff_url": "https://github.com/w3c/picture-in-picture/pull/134.diff",
+              "patch_url": "https://github.com/w3c/picture-in-picture/pull/134.patch"
+            }
+          }
+        ]
+      },
+      "check_runs": [],
+      "repoErrors": [
+        "invalidcontributing",
+        "nocodeofconduct",
+        "invalidlicense",
+        "unprotectedbranchforadmin",
+        "norequiredreview"
+      ]
+    },
+    {
+      "title": "Autoplay Policy Detection",
+      "shortname": "autoplay",
+      "editorDraft": "https://w3c.github.io/autoplay/",
+      "repo": "w3c/autoplay",
+      "recTrack": true,
+      "trStatus": "ED",
+      "wptShortname": "autoplay",
+      "milestones": [],
+      "hasPrPreview": false,
+      "editingTool": "",
+      "defaultBranch": "master",
+      "idl": false,
+      "implementationGaps": [],
+      "implementationSummary": false,
+      "wpt": {
+        "files": 0,
+        "assertions": 0,
+        "impl": {
+          "chrome": {
+            "passes": 0,
+            "total": 0,
+            "class": "passes-none"
+          },
+          "firefox": {
+            "passes": 0,
+            "total": 0,
+            "class": "passes-none"
+          },
+          "safari": {
+            "passes": 0,
+            "total": 0,
+            "class": "passes-none"
+          }
+        },
+        "issues": [],
+        "prs": []
+      },
+      "issues": {
+        "recent": [],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/autoplay/issues/11",
+            "number": 11,
+            "title": "CFC: Issues #3, #6, and #7 - sync vs. async",
+            "labels": [],
+            "created_at": "2019-10-04T00:12:48Z",
+            "updated_at": "2019-11-01T20:56:43Z"
+          },
+          {
+            "href": "https://github.com/w3c/autoplay/issues/7",
+            "number": 7,
+            "title": "[Web Media F2F] Document Level API issue",
+            "labels": [],
+            "created_at": "2019-03-11T22:03:28Z",
+            "updated_at": "2019-09-20T07:48:26Z"
+          },
+          {
+            "href": "https://github.com/w3c/autoplay/issues/6",
+            "number": 6,
+            "title": "readonly attribute Promise<AutoplayPolicy> autoplayPolicy;",
+            "labels": [],
+            "created_at": "2018-11-21T22:33:41Z",
+            "updated_at": "2018-12-14T19:32:33Z"
+          },
+          {
+            "href": "https://github.com/w3c/autoplay/issues/5",
+            "number": 5,
+            "title": "Only use exceptions/promise rejections for exceptional situations",
+            "labels": [],
+            "created_at": "2018-11-19T20:33:14Z",
+            "updated_at": "2018-11-20T21:49:47Z"
+          },
+          {
+            "href": "https://github.com/w3c/autoplay/issues/3",
+            "number": 3,
+            "title": "Does canAutoplay() need to be async?",
+            "labels": [],
+            "created_at": "2018-11-12T03:05:18Z",
+            "updated_at": "2018-11-22T00:06:25Z"
+          },
+          {
+            "href": "https://github.com/w3c/autoplay/issues/2",
+            "number": 2,
+            "title": "Picking names",
+            "labels": [],
+            "created_at": "2018-11-07T13:50:35Z",
+            "updated_at": "2018-12-14T17:21:00Z"
+          },
+          {
+            "href": "https://github.com/w3c/autoplay/issues/1",
+            "number": 1,
+            "title": "[TPAC 2018] Autoplay Policy Informal Meeting Notes",
+            "labels": [],
+            "created_at": "2018-10-25T12:54:00Z",
+            "updated_at": "2019-03-23T22:03:29Z"
+          }
+        ]
+      },
+      "prs": {
+        "open": [
+          {
+            "href": "https://github.com/w3c/autoplay/pull/8",
+            "number": 8,
+            "title": "Add proposed explainer",
+            "labels": [],
+            "created_at": "2019-03-25T23:19:09Z",
+            "updated_at": "2019-06-27T14:06:54Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/autoplay/pulls/8",
+              "html_url": "https://github.com/w3c/autoplay/pull/8",
+              "diff_url": "https://github.com/w3c/autoplay/pull/8.diff",
+              "patch_url": "https://github.com/w3c/autoplay/pull/8.patch"
+            }
+          }
+        ],
+        "stalled": [
+          {
+            "href": "https://github.com/w3c/autoplay/pull/8",
+            "number": 8,
+            "title": "Add proposed explainer",
+            "labels": [],
+            "created_at": "2019-03-25T23:19:09Z",
+            "updated_at": "2019-06-27T14:06:54Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/autoplay/pulls/8",
+              "html_url": "https://github.com/w3c/autoplay/pull/8",
+              "diff_url": "https://github.com/w3c/autoplay/pull/8.diff",
+              "patch_url": "https://github.com/w3c/autoplay/pull/8.patch"
+            }
+          }
+        ]
+      },
+      "check_runs": [],
+      "repoErrors": [
+        "invalidcontributing",
+        "nocodeofconduct",
+        "unprotectedbranchforadmin",
+        "norequiredreview"
+      ]
+    },
+    {
+      "title": "Encrypted Media Extensions",
+      "shortname": "encrypted-media",
+      "editorDraft": "https://w3c.github.io/encrypted-media/",
+      "repo": "w3c/encrypted-media",
+      "recTrack": true,
+      "trStatus": "ED",
+      "wptShortname": "encrypted-media",
+      "milestones": [],
+      "hasPrPreview": true,
+      "editingTool": "respec",
+      "defaultBranch": "master",
+      "idl": {
+        "interfaces": {
+          "MediaKeySystemAccess": 4,
+          "MediaKeys": 5,
+          "MediaKeySession": 16,
+          "MediaKeyStatusMap": 7,
+          "MediaKeyMessageEvent": 4,
+          "MediaEncryptedEvent": 4,
+          "Navigator": 1,
+          "HTMLMediaElement": 4
+        },
+        "dictionaries": {
+          "MediaKeySystemConfiguration": 7,
+          "MediaKeySystemMediaCapability": 3,
+          "MediaKeyMessageEventInit": 2,
+          "MediaEncryptedEventInit": 2
+        },
+        "enums": {
+          "MediaKeysRequirement": 3,
+          "MediaKeySessionType": 3,
+          "MediaKeyStatus": 8,
+          "MediaKeyMessageType": 4
+        },
+        "total": 77
+      },
+      "implementationGaps": [],
+      "implementationSummary": false,
+      "wpt": {
+        "files": 106,
+        "assertions": 460,
+        "impl": {
+          "chrome": {
+            "passes": 434,
+            "total": 460,
+            "class": "passes-lots"
+          },
+          "firefox": {
+            "passes": 290,
+            "total": 444,
+            "class": "passes-half"
+          },
+          "safari": {
+            "passes": 271,
+            "total": 391,
+            "class": "passes-half"
+          }
+        },
+        "issues": [
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/15299",
+            "number": 15299,
+            "title": "PlayReady tests do not seem to be parsing the message XML format properly",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2019-02-08T15:57:51Z",
+            "updated_at": "2019-02-14T09:38:09Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/8410",
+            "number": 8410,
+            "title": "[eme] Some Widevine tests fail if first \"license-request\" message is for a certificate",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2017-11-22T20:50:10Z",
+            "updated_at": "2018-05-28T09:45:44Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/4136",
+            "number": 4136,
+            "title": "[EME] *mp4-unique-origin.html doesn't enforce anything in the EME spec",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-31T21:23:34Z",
+            "updated_at": "2018-05-28T09:45:28Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/4135",
+            "number": 4135,
+            "title": "DRM related tests race on network latency",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-31T21:14:51Z",
+            "updated_at": "2018-05-28T09:41:32Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/4075",
+            "number": 4075,
+            "title": "[eme] Clarify name and description of clear-encrypted and encrypted-clear tests",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-25T18:07:21Z",
+            "updated_at": "2018-05-28T09:41:31Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/4074",
+            "number": 4074,
+            "title": "[eme] Description for test in drm-invalid-license.html is incorrect",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-25T17:42:33Z",
+            "updated_at": "2018-05-28T09:41:29Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/4027",
+            "number": 4027,
+            "title": "[eme] drm-temporary-license-type.html does not request correct license type",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-19T20:36:59Z",
+            "updated_at": "2018-05-28T09:41:32Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3996",
+            "number": 3996,
+            "title": "[eme] Cover all paths to the Wait for Key algorithm",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-17T22:49:39Z",
+            "updated_at": "2018-05-28T09:41:32Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3995",
+            "number": 3995,
+            "title": "[eme] Test Attempt to Resume Playback If Necessary algorithm, including readyState",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-17T22:43:03Z",
+            "updated_at": "2018-05-28T09:41:32Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3983",
+            "number": 3983,
+            "title": "[eme] Need tests for MediaKeySession methods when session is closed",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-15T22:50:51Z",
+            "updated_at": "2018-05-28T09:41:32Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3970",
+            "number": 3970,
+            "title": "[eme] additional syntax tests",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-10-12T10:18:29Z",
+            "updated_at": "2018-05-28T09:41:32Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3765",
+            "number": 3765,
+            "title": "[eme] Differentiate between unsupported features and successful test execution",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-20T01:50:41Z",
+            "updated_at": "2018-05-28T09:41:19Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3764",
+            "number": 3764,
+            "title": "[eme] Harden tests and utils against test bugs",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-20T01:43:12Z",
+            "updated_at": "2018-05-28T09:41:24Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3740",
+            "number": 3740,
+            "title": "[eme] Add test for license-renewal and changing keys within a session",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-15T23:47:22Z",
+            "updated_at": "2018-05-28T09:41:32Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3721",
+            "number": 3721,
+            "title": "[eme] Add test where \"encrypted\" event is never raised",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-15T06:10:01Z",
+            "updated_at": "2018-05-28T09:41:32Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3707",
+            "number": 3707,
+            "title": "[eme] Cleanup: remove unnecessary log div and video ID from Google tests",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-13T23:10:59Z",
+            "updated_at": "2018-05-28T09:41:19Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3625",
+            "number": 3625,
+            "title": "[eme] Test persistent-usage-record tests with DRMToday",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-01T15:31:10Z",
+            "updated_at": "2018-05-28T09:41:19Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3423",
+            "number": 3423,
+            "title": "[eme] Miscellaneous test cleanup",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-08-02T20:17:13Z",
+            "updated_at": "2018-05-28T09:41:20Z"
+          }
+        ],
+        "prs": [
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/9899",
+            "number": 9899,
+            "title": "[encrypted-media] Correctly call isInitDataTypeSupported.",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-03-07T15:58:53Z",
+            "updated_at": "2018-05-28T09:47:24Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/9899",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/9899",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/9899.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/9899.patch"
+            }
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/8574",
+            "number": 8574,
+            "title": "[eme] Set server certificate if available to avoid unnecessary message",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2017-12-05T23:03:33Z",
+            "updated_at": "2018-05-28T09:45:55Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/8574",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/8574",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/8574.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/8574.patch"
+            }
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/4548",
+            "number": 4548,
+            "title": "createMediaElementSource from EME element test",
+            "labels": [
+              {
+                "id": 392252471,
+                "node_id": "MDU6TGFiZWwzOTIyNTI0NzE=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/encrypted-media",
+                "name": "encrypted-media",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2017-01-17T23:28:58Z",
+            "updated_at": "2018-05-28T09:43:06Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/4548",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/4548",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/4548.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/4548.patch"
+            }
+          }
+        ]
+      },
+      "issues": {
+        "recent": [],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/473",
+            "number": 473,
+            "title": "Handling hardware context reset",
+            "labels": [
+              {
+                "id": 147319127,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjc=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2020-07-17T23:32:58Z",
+            "updated_at": "2020-09-08T21:30:28Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/468",
+            "number": 468,
+            "title": "Clarify what could cause session.keyStatuses to always be empty",
+            "labels": [
+              {
+                "id": 147319130,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMzA=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/question",
+                "name": "question",
+                "color": "cc317c",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2020-06-26T03:35:18Z",
+            "updated_at": "2020-09-08T23:51:01Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/467",
+            "number": 467,
+            "title": "API to find existing sessions",
+            "labels": [
+              {
+                "id": 147319127,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjc=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2020-01-28T00:20:56Z",
+            "updated_at": "2020-09-08T21:54:08Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/466",
+            "number": 466,
+            "title": "Clarify behaviour around discarded browsing contexts and unloaded windows",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2020-01-22T17:31:11Z",
+            "updated_at": "2020-09-08T21:54:44Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/464",
+            "number": 464,
+            "title": "Clarify the size of a key ID",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2020-01-09T07:18:03Z",
+            "updated_at": "2020-09-08T21:54:43Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/461",
+            "number": 461,
+            "title": "Clarify explicitly when promises are to be resolved",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2019-12-10T23:13:34Z",
+            "updated_at": "2020-09-08T21:54:43Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/460",
+            "number": 460,
+            "title": "Needs clarification on \"Usable For Decryption\" and \"usable\" key status",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2019-11-22T21:24:22Z",
+            "updated_at": "2020-09-08T21:54:43Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/453",
+            "number": 453,
+            "title": "Update to constructor operations",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2019-08-29T08:53:15Z",
+            "updated_at": "2020-09-08T21:54:42Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/452",
+            "number": 452,
+            "title": "Update spec to new IDL syntax for optional dictionaries",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2019-08-21T15:47:18Z",
+            "updated_at": "2020-09-08T21:54:42Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/450",
+            "number": 450,
+            "title": "Provide a guideline on how to detect a browsers implemented EME version",
+            "labels": [
+              {
+                "id": 147319130,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMzA=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/question",
+                "name": "question",
+                "color": "cc317c",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2019-05-10T00:17:47Z",
+            "updated_at": "2020-09-08T21:46:38Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/449",
+            "number": 449,
+            "title": "Tracking the lifecycle of a KeyId",
+            "labels": [
+              {
+                "id": 147319127,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjc=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2019-01-25T21:38:51Z",
+            "updated_at": "2020-09-08T21:47:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/448",
+            "number": 448,
+            "title": "Add a note about the case where all keys are released after load()",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-12-04T01:22:28Z",
+            "updated_at": "2020-09-08T21:54:42Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/447",
+            "number": 447,
+            "title": "sessionTypes: sequence of DOMString vs sequence of MediaKeySessionType",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-11-07T20:35:25Z",
+            "updated_at": "2020-09-08T21:54:41Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/445",
+            "number": 445,
+            "title": "Attempt to Resume Playback If Necessary algorithm should have an explicit step to resume",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-09-12T13:54:22Z",
+            "updated_at": "2020-09-08T21:54:41Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/443",
+            "number": 443,
+            "title": "Question about enabling offline playback",
+            "labels": [
+              {
+                "id": 147319130,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMzA=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/question",
+                "name": "question",
+                "color": "cc317c",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-08-31T22:14:12Z",
+            "updated_at": "2020-09-08T21:49:38Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/442",
+            "number": 442,
+            "title": "Need \"insufficient security\" MediaKeyStatus",
+            "labels": [
+              {
+                "id": 147319127,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjc=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-07-16T17:19:33Z",
+            "updated_at": "2020-09-08T21:52:07Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/440",
+            "number": 440,
+            "title": "\"cenc\" Initialization Data Format: 'pssh' box selection",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-04-16T18:06:51Z",
+            "updated_at": "2020-09-08T21:54:41Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/438",
+            "number": 438,
+            "title": "Clarify \"accessible\" and \"asynchonously\"",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-02-23T16:33:11Z",
+            "updated_at": "2020-09-08T21:54:41Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/433",
+            "number": 433,
+            "title": "Inconsistent handling of invalid parameters",
+            "labels": [
+              {
+                "id": 147319125,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjU=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/bug",
+                "name": "bug",
+                "color": "fc2929",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2017-12-02T01:55:57Z",
+            "updated_at": "2020-09-08T21:54:40Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/409",
+            "number": 409,
+            "title": "API to add wasm packaged CDM",
+            "labels": [],
+            "created_at": "2017-06-07T13:39:21Z",
+            "updated_at": "2017-06-09T20:13:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/390",
+            "number": 390,
+            "title": "Distinctive Identifier association mediated by CDM server",
+            "labels": [],
+            "created_at": "2017-04-19T07:20:35Z",
+            "updated_at": "2017-06-16T00:00:21Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/373",
+            "number": 373,
+            "title": "Get Supported Capabilities algorithm appears to conflict with RFCs specifying MIME types",
+            "labels": [],
+            "created_at": "2017-03-04T00:38:45Z",
+            "updated_at": "2020-06-09T14:22:36Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/360",
+            "number": 360,
+            "title": "Provide best practices for authors",
+            "labels": [
+              {
+                "id": 165971756,
+                "node_id": "MDU6TGFiZWwxNjU5NzE3NTY=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/needs%20author%20input",
+                "name": "needs author input",
+                "color": "eb6420",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-11-08T21:32:53Z",
+            "updated_at": "2017-02-09T18:15:21Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/312",
+            "number": 312,
+            "title": "Security: Should implementations be required to inform users in cases where this is currently recommended?",
+            "labels": [],
+            "created_at": "2016-09-07T23:39:17Z",
+            "updated_at": "2016-11-01T22:46:36Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/311",
+            "number": 311,
+            "title": "Early detection of output protection status",
+            "labels": [
+              {
+                "id": 147319127,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjc=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-07T15:24:38Z",
+            "updated_at": "2020-07-23T17:21:40Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/293",
+            "number": 293,
+            "title": "WebIDL has link errors after contiguous IDL conversion",
+            "labels": [
+              {
+                "id": 165971297,
+                "node_id": "MDU6TGFiZWwxNjU5NzEyOTc=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/blocked",
+                "name": "blocked",
+                "color": "fad8c7",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-08-03T18:02:47Z",
+            "updated_at": "2016-10-31T23:26:47Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/251",
+            "number": 251,
+            "title": "Specify mixed encrypted/unencrypted content",
+            "labels": [
+              {
+                "id": 147319127,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjc=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-06-11T23:38:07Z",
+            "updated_at": "2020-07-23T17:24:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/207",
+            "number": 207,
+            "title": "Formally describe the generation of a license request in update() when another message was sent by generateRequest()",
+            "labels": [],
+            "created_at": "2016-05-27T22:14:43Z",
+            "updated_at": "2016-05-27T22:14:43Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/197",
+            "number": 197,
+            "title": "How should the capability to decode unencrypted media data be checked?",
+            "labels": [
+              {
+                "id": 147319127,
+                "node_id": "MDU6TGFiZWwxNDczMTkxMjc=",
+                "url": "https://api.github.com/repos/w3c/encrypted-media/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-05-20T00:42:29Z",
+            "updated_at": "2020-07-23T17:29:21Z"
+          },
+          {
+            "href": "https://github.com/w3c/encrypted-media/issues/194",
+            "number": 194,
+            "title": "  Bug 27055  - Surfacing license to the user",
+            "labels": [],
+            "created_at": "2016-05-17T19:36:40Z",
+            "updated_at": "2016-05-17T19:56:41Z"
+          }
+        ]
+      },
+      "prs": {
+        "open": [],
+        "stalled": []
+      },
+      "check_runs": [
+        {
+          "href": "https://github.com/w3c/encrypted-media/runs/1283699256",
+          "conclusion": "success",
+          "title": "GitHub Pages successfully built your site.",
+          "summary": "Your website is ready at [`https://w3c.github.io/encrypted-media`](https://w3c.github.io/encrypted-media)"
+        }
+      ],
+      "repoErrors": [
+        "invalidcontributing",
+        "nocodeofconduct",
+        "invalidlicense",
+        "unprotectedbranchforadmin",
+        "norequiredreview"
+      ]
+    },
+    {
+      "title": "Media Playback Quality",
+      "shortname": "media-playback-quality",
+      "editorDraft": "https://w3c.github.io/media-playback-quality/",
+      "repo": "w3c/media-playback-quality",
+      "recTrack": true,
+      "trStatus": "ED",
+      "wptShortname": "media-playback-quality",
+      "milestones": [],
+      "hasPrPreview": false,
+      "editingTool": "",
+      "defaultBranch": "gh-pages",
+      "idl": {
+        "interfaces": {
+          "VideoPlaybackQuality": 5,
+          "HTMLVideoElement": 1
+        },
+        "dictionaries": {},
+        "enums": {},
+        "total": 6
+      },
+      "implementationGaps": [],
+      "implementationSummary": false,
+      "wpt": {
+        "files": 1,
+        "assertions": 31,
+        "impl": {
+          "chrome": {
+            "passes": 31,
+            "total": 31,
+            "class": "passes-all"
+          },
+          "firefox": {
+            "passes": 29,
+            "total": 31,
+            "class": "passes-lots"
+          },
+          "safari": {
+            "passes": 19,
+            "total": 31,
+            "class": "passes-half"
+          }
+        },
+        "issues": [],
+        "prs": []
+      },
+      "issues": {
+        "recent": [],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/19",
+            "number": 19,
+            "title": "Clarification needed for HTMLVideoElements that are playing a MediaStream",
+            "labels": [],
+            "created_at": "2019-10-09T12:06:36Z",
+            "updated_at": "2020-11-03T23:37:52Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/17",
+            "number": 17,
+            "title": "Provide rate information directly",
+            "labels": [],
+            "created_at": "2019-08-06T14:45:32Z",
+            "updated_at": "2019-08-06T14:45:32Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/16",
+            "number": 16,
+            "title": "Interaction with VideoTrack API",
+            "labels": [],
+            "created_at": "2019-08-05T16:47:13Z",
+            "updated_at": "2019-10-09T12:12:13Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/13",
+            "number": 13,
+            "title": "Integration with HTML",
+            "labels": [],
+            "created_at": "2019-07-19T01:42:53Z",
+            "updated_at": "2019-07-19T01:42:53Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/9",
+            "number": 9,
+            "title": "Add missing anchors to spec for linking",
+            "labels": [],
+            "created_at": "2018-11-27T20:23:00Z",
+            "updated_at": "2018-11-27T20:23:00Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/4",
+            "number": 4,
+            "title": "Specify what to do if the information can't be retrieved",
+            "labels": [],
+            "created_at": "2016-08-03T10:56:04Z",
+            "updated_at": "2016-08-03T10:56:04Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/3",
+            "number": 3,
+            "title": "Don't return a read-only object",
+            "labels": [],
+            "created_at": "2016-08-03T10:52:09Z",
+            "updated_at": "2016-08-03T10:53:50Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/2",
+            "number": 2,
+            "title": "Consider exposing a PlaybackInformation object",
+            "labels": [],
+            "created_at": "2016-08-03T10:50:33Z",
+            "updated_at": "2016-08-03T10:50:33Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-playback-quality/issues/1",
+            "number": 1,
+            "title": "Expose time to decode frame",
+            "labels": [],
+            "created_at": "2016-08-03T10:46:50Z",
+            "updated_at": "2016-08-03T10:46:50Z"
+          }
+        ]
+      },
+      "prs": {
+        "open": [],
+        "stalled": []
+      },
+      "check_runs": [
+        {
+          "href": "https://github.com/w3c/media-playback-quality/runs/396356465",
+          "conclusion": "success",
+          "title": "GitHub Pages successfully built your site.",
+          "summary": "Your website is ready at [`https://w3c.github.io/media-playback-quality`](https://w3c.github.io/media-playback-quality)"
+        }
+      ],
+      "repoErrors": [
+        "invalidcontributing",
+        "nocodeofconduct",
+        "unprotectedbranchforadmin",
+        "norequiredreview"
+      ]
+    },
+    {
+      "title": "Media Source Extensions",
+      "shortname": "media-source",
+      "editorDraft": "https://w3c.github.io/media-source/",
+      "repo": "w3c/media-source",
+      "recTrack": true,
+      "trStatus": "ED",
+      "wptShortname": "media-source",
+      "milestones": [],
+      "hasPrPreview": true,
+      "editingTool": "respec",
+      "defaultBranch": "gh-pages",
+      "idl": {
+        "interfaces": {
+          "MediaSource": 21,
+          "SourceBuffer": 21,
+          "SourceBufferList": 6,
+          "URL": 1,
+          "AudioTrack": 1,
+          "VideoTrack": 1,
+          "TextTrack": 1
+        },
+        "dictionaries": {},
+        "enums": {
+          "ReadyState": 3,
+          "EndOfStreamError": 2,
+          "AppendMode": 2
+        },
+        "total": 59
+      },
+      "implementationGaps": [],
+      "implementationSummary": false,
+      "wpt": {
+        "files": 71,
+        "assertions": 636,
+        "impl": {
+          "chrome": {
+            "passes": 566,
+            "total": 636,
+            "class": "passes-lots"
+          },
+          "firefox": {
+            "passes": 495,
+            "total": 610,
+            "class": "passes-lots"
+          },
+          "safari": {
+            "passes": 394,
+            "total": 561,
+            "class": "passes-half"
+          }
+        },
+        "issues": [
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/21240",
+            "number": 21240,
+            "title": "Add test for audio/webm;codecs=opus using lacing",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 284748860,
+                "node_id": "MDU6TGFiZWwyODQ3NDg4NjA=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/type:missing-coverage",
+                "name": "type:missing-coverage",
+                "color": "eb6420",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2020-01-17T18:35:40Z",
+            "updated_at": "2020-01-27T23:02:37Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/11005",
+            "number": 11005,
+            "title": "Improve correctness of /media-source/mediasource-duration.html",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-05-15T09:13:05Z",
+            "updated_at": "2018-05-28T09:48:45Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/10920",
+            "number": 10920,
+            "title": "/media-source/mediasource-duration.html is disabled in Mozilla & Edge and flaky in Chromium",
+            "labels": [
+              {
+                "id": 545565689,
+                "node_id": "MDU6TGFiZWw1NDU1NjU2ODk=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/flaky",
+                "name": "flaky",
+                "color": "d93f0b",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-05-09T12:24:27Z",
+            "updated_at": "2018-06-21T11:51:44Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/10919",
+            "number": 10919,
+            "title": "/media-source/mediasource-activesourcebuffers.html is disabled in Mozilla & Edge and flaky in Chromium",
+            "labels": [
+              {
+                "id": 545565689,
+                "node_id": "MDU6TGFiZWw1NDU1NjU2ODk=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/flaky",
+                "name": "flaky",
+                "color": "d93f0b",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-05-09T12:08:04Z",
+            "updated_at": "2018-06-21T11:49:35Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3727",
+            "number": 3727,
+            "title": "media-source/mediasource-errors.html: Invalid test",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 284748889,
+                "node_id": "MDU6TGFiZWwyODQ3NDg4ODk=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/type:bug",
+                "name": "type:bug",
+                "color": "eb6420",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-15T07:37:02Z",
+            "updated_at": "2018-05-28T09:42:36Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3726",
+            "number": 3726,
+            "title": "media-source/mediasource-errors.html: invalid check that mediasource readyState is \"closed\"",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 284748889,
+                "node_id": "MDU6TGFiZWwyODQ3NDg4ODk=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/type:bug",
+                "name": "type:bug",
+                "color": "eb6420",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-15T07:09:20Z",
+            "updated_at": "2018-05-28T09:42:36Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/3673",
+            "number": 3673,
+            "title": "Add more test coverage around text tracks",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 284748860,
+                "node_id": "MDU6TGFiZWwyODQ3NDg4NjA=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/type:missing-coverage",
+                "name": "type:missing-coverage",
+                "color": "eb6420",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2016-09-09T01:43:10Z",
+            "updated_at": "2018-05-28T09:41:12Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/2409",
+            "number": 2409,
+            "title": "media-source/mediasource-is-type-supported.html incorrectly assume that some webm mimetype are invalid",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2015-12-03T06:56:42Z",
+            "updated_at": "2018-05-28T09:41:12Z"
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/issues/1386",
+            "number": 1386,
+            "title": "media-source isTypeSupported test problems",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2014-11-14T21:34:54Z",
+            "updated_at": "2018-05-28T09:41:08Z"
+          }
+        ],
+        "prs": [
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/14639",
+            "number": 14639,
+            "title": "Remove options parameter from mediasource.",
+            "labels": [
+              {
+                "id": 461919687,
+                "node_id": "MDU6TGFiZWw0NjE5MTk2ODc=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/do%20not%20merge%20yet",
+                "name": "do not merge yet",
+                "color": "d93f0b",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-12-21T08:45:06Z",
+            "updated_at": "2019-11-22T12:19:01Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/14639",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/14639",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/14639.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/14639.patch"
+            }
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/13973",
+            "number": 13973,
+            "title": "Add HEVC test content for web-platform-tests/media-source/mediasource-changetype-play.html test",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-11-07T22:17:42Z",
+            "updated_at": "2018-11-07T22:41:50Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/13973",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/13973",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/13973.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/13973.patch"
+            }
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/10989",
+            "number": 10989,
+            "title": "Update mediasource-duration.html from Chromium",
+            "labels": [
+              {
+                "id": 545565689,
+                "node_id": "MDU6TGFiZWw1NDU1NjU2ODk=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/flaky",
+                "name": "flaky",
+                "color": "d93f0b",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-05-14T15:06:15Z",
+            "updated_at": "2020-01-24T20:05:14Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/10989",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/10989",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/10989.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/10989.patch"
+            }
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/7929",
+            "number": 7929,
+            "title": "Test for segments that don't start with keyframe.",
+            "labels": [
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2017-10-20T17:12:10Z",
+            "updated_at": "2020-10-20T13:10:34Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/7929",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/7929",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/7929.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/7929.patch"
+            }
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/1405",
+            "number": 1405,
+            "title": "Proposed improvments to isTypeSupported tests",
+            "labels": [
+              {
+                "id": 138807870,
+                "node_id": "MDU6TGFiZWwxMzg4MDc4NzA=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/deferred",
+                "name": "deferred",
+                "color": "cccccc",
+                "default": false,
+                "description": ""
+              },
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 102826625,
+                "node_id": "MDU6TGFiZWwxMDI4MjY2MjU=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/stale:awaiting-submitter-response",
+                "name": "stale:awaiting-submitter-response",
+                "color": "e11d21",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2014-11-21T16:37:52Z",
+            "updated_at": "2019-10-28T22:34:06Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/1405",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/1405",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/1405.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/1405.patch"
+            }
+          },
+          {
+            "href": "https://github.com/web-platform-tests/wpt/pull/954",
+            "number": 954,
+            "title": "Unit tests for SourceBuffer#appendStream function",
+            "labels": [
+              {
+                "id": 138807870,
+                "node_id": "MDU6TGFiZWwxMzg4MDc4NzA=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/deferred",
+                "name": "deferred",
+                "color": "cccccc",
+                "default": false,
+                "description": ""
+              },
+              {
+                "id": 61736591,
+                "node_id": "MDU6TGFiZWw2MTczNjU5MQ==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/media-source",
+                "name": "media-source",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 529271164,
+                "node_id": "MDU6TGFiZWw1MjkyNzExNjQ=",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/status:needs-spec-decision",
+                "name": "status:needs-spec-decision",
+                "color": "006b75",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 80290214,
+                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
+                "name": "wg-html",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2014-04-30T19:18:47Z",
+            "updated_at": "2020-03-17T22:03:51Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/954",
+              "html_url": "https://github.com/web-platform-tests/wpt/pull/954",
+              "diff_url": "https://github.com/web-platform-tests/wpt/pull/954.diff",
+              "patch_url": "https://github.com/web-platform-tests/wpt/pull/954.patch"
+            }
+          }
+        ]
+      },
+      "issues": {
+        "recent": [],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/media-source/issues/261",
+            "number": 261,
+            "title": "Add \"Security Considerations\" and \"Privacy Considerations\" sections to the spec",
+            "labels": [],
+            "created_at": "2020-11-23T22:13:44Z",
+            "updated_at": "2020-11-23T22:13:44Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/259",
+            "number": 259,
+            "title": "Consider adding support for apps to get metadata about what is currently buffered",
+            "labels": [],
+            "created_at": "2020-10-20T20:52:35Z",
+            "updated_at": "2020-10-20T20:52:35Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/256",
+            "number": 256,
+            "title": "Compatibility with WebTransport ",
+            "labels": [
+              {
+                "id": 2365290374,
+                "node_id": "MDU6TGFiZWwyMzY1MjkwMzc0",
+                "url": "https://api.github.com/repos/w3c/media-source/labels/backlog",
+                "name": "backlog",
+                "color": "6e81ef",
+                "default": false,
+                "description": ""
+              },
+              {
+                "id": 147319186,
+                "node_id": "MDU6TGFiZWwxNDczMTkxODY=",
+                "url": "https://api.github.com/repos/w3c/media-source/labels/question",
+                "name": "question",
+                "color": "cc317c",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2020-09-21T22:29:56Z",
+            "updated_at": "2020-10-03T00:54:23Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/255",
+            "number": 255,
+            "title": "Add vp09 codec string with relevant references similar to the webm vp09 codec string, to ISOBMFF Byte Stream Format",
+            "labels": [],
+            "created_at": "2020-09-11T18:27:10Z",
+            "updated_at": "2020-09-28T21:14:45Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/254",
+            "number": 254,
+            "title": "Are MSE incubations in WICG still ongoing?",
+            "labels": [],
+            "created_at": "2020-06-17T13:10:39Z",
+            "updated_at": "2020-09-08T21:45:44Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/253",
+            "number": 253,
+            "title": "VideoPlaybackQuality is moving to Media Playback Quality spec",
+            "labels": [],
+            "created_at": "2020-06-09T14:31:49Z",
+            "updated_at": "2020-09-28T21:14:18Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/250",
+            "number": 250,
+            "title": "Does the specification require duration to be set for all blocks in WebM compliant files?",
+            "labels": [],
+            "created_at": "2020-01-26T05:04:03Z",
+            "updated_at": "2020-09-28T21:13:38Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/245",
+            "number": 245,
+            "title": "Will MSE Support audio/ogg (audio/opus) Byte Streams?",
+            "labels": [
+              {
+                "id": 147319183,
+                "node_id": "MDU6TGFiZWwxNDczMTkxODM=",
+                "url": "https://api.github.com/repos/w3c/media-source/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2019-12-03T06:08:10Z",
+            "updated_at": "2020-09-28T21:10:52Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/242",
+            "number": 242,
+            "title": "WPT and MSEv2",
+            "labels": [],
+            "created_at": "2019-09-27T20:16:10Z",
+            "updated_at": "2020-09-28T21:09:57Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/241",
+            "number": 241,
+            "title": "Editor task: Upstream WICG/media-source incubations to W3C/media-source for vNext work",
+            "labels": [],
+            "created_at": "2019-09-26T23:12:23Z",
+            "updated_at": "2020-09-08T21:47:58Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/240",
+            "number": 240,
+            "title": "Clarify that endOfStream() before HAVE_METADATA should trigger HTMLMediaElement dedicated media source failure steps ",
+            "labels": [],
+            "created_at": "2019-09-26T20:03:14Z",
+            "updated_at": "2020-09-28T21:08:21Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/239",
+            "number": 239,
+            "title": "Drop generated versions from the repo?",
+            "labels": [],
+            "created_at": "2019-09-26T14:47:00Z",
+            "updated_at": "2020-11-23T19:37:41Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/236",
+            "number": 236,
+            "title": "Investigate MSE in ServiceWorker as part of MSE in Workers",
+            "labels": [],
+            "created_at": "2019-09-20T03:01:37Z",
+            "updated_at": "2020-09-28T21:58:30Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/232",
+            "number": 232,
+            "title": "Add garbage collection modes to SourceBuffer",
+            "labels": [
+              {
+                "id": 147319183,
+                "node_id": "MDU6TGFiZWwxNDczMTkxODM=",
+                "url": "https://api.github.com/repos/w3c/media-source/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2019-05-16T01:14:46Z",
+            "updated_at": "2020-09-28T21:57:19Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/231",
+            "number": 231,
+            "title": "confusion on coded frame eviction algorithm / QuotaExceededError when preloading",
+            "labels": [],
+            "created_at": "2019-04-08T09:16:41Z",
+            "updated_at": "2020-09-28T21:57:00Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/227",
+            "number": 227,
+            "title": "Normative section \"Definitions\" is contained in a non-normative section",
+            "labels": [],
+            "created_at": "2019-02-02T01:39:53Z",
+            "updated_at": "2020-09-21T18:36:43Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/226",
+            "number": 226,
+            "title": "Clarify that endOfStream() also should run at least the first (if not all) step of the Reset Parser State Algorithm",
+            "labels": [],
+            "created_at": "2019-01-04T23:45:13Z",
+            "updated_at": "2020-09-28T21:56:00Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/220",
+            "number": 220,
+            "title": "gaps in how endOfStream method fits with everything else",
+            "labels": [],
+            "created_at": "2018-09-11T07:11:08Z",
+            "updated_at": "2020-09-28T21:54:49Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/219",
+            "number": 219,
+            "title": "set timestampoffset",
+            "labels": [],
+            "created_at": "2018-09-03T16:01:48Z",
+            "updated_at": "2020-09-28T21:54:01Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/218",
+            "number": 218,
+            "title": "Discourage support of inband codec configurations",
+            "labels": [
+              {
+                "id": 147319186,
+                "node_id": "MDU6TGFiZWwxNDczMTkxODY=",
+                "url": "https://api.github.com/repos/w3c/media-source/labels/question",
+                "name": "question",
+                "color": "cc317c",
+                "default": true,
+                "description": null
+              }
+            ],
+            "created_at": "2018-08-28T00:26:30Z",
+            "updated_at": "2020-09-28T21:27:29Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/215",
+            "number": 215,
+            "title": "Spec is too rigid on requiring initial HAVE_CURRENT_DATA transition occur synchronously within coded frame processing (possibly ditto for HAVE_METADATA and init segment received processing)",
+            "labels": [
+              {
+                "id": 273534288,
+                "node_id": "MDU6TGFiZWwyNzM1MzQyODg=",
+                "url": "https://api.github.com/repos/w3c/media-source/labels/interoperability",
+                "name": "interoperability",
+                "color": "5319e7",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-06-20T22:43:06Z",
+            "updated_at": "2020-09-21T21:25:28Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/212",
+            "number": 212,
+            "title": "endOfStream() prior to HAVE_METADATA is not defined well",
+            "labels": [],
+            "created_at": "2018-05-21T22:36:56Z",
+            "updated_at": "2020-09-28T21:53:09Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/211",
+            "number": 211,
+            "title": "URL.createObjectURL IDL is wrong (no overload across partial interfaces)",
+            "labels": [],
+            "created_at": "2018-05-03T12:59:27Z",
+            "updated_at": "2020-11-24T14:56:53Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/209",
+            "number": 209,
+            "title": "Expose SourceBuffer as an ArrayBuffer ",
+            "labels": [
+              {
+                "id": 147319183,
+                "node_id": "MDU6TGFiZWwxNDczMTkxODM=",
+                "url": "https://api.github.com/repos/w3c/media-source/labels/feature%20request",
+                "name": "feature request",
+                "color": "84b6eb",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-03-23T02:54:50Z",
+            "updated_at": "2020-09-21T21:36:53Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/206",
+            "number": 206,
+            "title": "appendWindowStart - Random Access Point",
+            "labels": [],
+            "created_at": "2018-02-14T15:07:10Z",
+            "updated_at": "2020-09-28T21:52:22Z"
+          },
+          {
+            "href": "https://github.com/w3c/media-source/issues/205",
+            "number": 205,
+            "title": "Expand the applicability of the seek \"fudge room\" beyond just the first TimeRange",
+            "labels": [
+              {
+                "id": 273534288,
+                "node_id": "MDU6TGFiZWwyNzM1MzQyODg=",
+                "url": "https://api.github.com/repos/w3c/media-source/labels/interoperability",
+                "name": "interoperability",
+                "color": "5319e7",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2018-01-31T23:51:42Z",
+            "updated_at": "2020-09-21T16:54:29Z"
+          }
+        ]
+      },
+      "prs": {
+        "open": [
+          {
+            "href": "https://github.com/w3c/media-source/pull/265",
+            "number": 265,
+            "title": "Convert most references to ReSpec's shortlinks syntax",
+            "labels": [],
+            "created_at": "2020-11-29T18:27:45Z",
+            "updated_at": "2020-11-29T18:28:00Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-source/pulls/265",
+              "html_url": "https://github.com/w3c/media-source/pull/265",
+              "diff_url": "https://github.com/w3c/media-source/pull/265.diff",
+              "patch_url": "https://github.com/w3c/media-source/pull/265.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/media-source/pull/264",
+            "number": 264,
+            "title": "Drop dependency on jQuery",
+            "labels": [],
+            "created_at": "2020-11-27T18:47:44Z",
+            "updated_at": "2020-11-30T23:21:16Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-source/pulls/264",
+              "html_url": "https://github.com/w3c/media-source/pull/264",
+              "diff_url": "https://github.com/w3c/media-source/pull/264.diff",
+              "patch_url": "https://github.com/w3c/media-source/pull/264.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/media-source/pull/229",
+            "number": 229,
+            "title": "Remove createObjectURL extension",
+            "labels": [],
+            "created_at": "2019-02-05T07:38:46Z",
+            "updated_at": "2020-11-24T14:01:05Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-source/pulls/229",
+              "html_url": "https://github.com/w3c/media-source/pull/229",
+              "diff_url": "https://github.com/w3c/media-source/pull/229.diff",
+              "patch_url": "https://github.com/w3c/media-source/pull/229.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/media-source/pull/228",
+            "number": 228,
+            "title": "Separate Definitions section from Introduction",
+            "labels": [],
+            "created_at": "2019-02-02T02:06:28Z",
+            "updated_at": "2019-02-02T02:06:42Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-source/pulls/228",
+              "html_url": "https://github.com/w3c/media-source/pull/228",
+              "diff_url": "https://github.com/w3c/media-source/pull/228.diff",
+              "patch_url": "https://github.com/w3c/media-source/pull/228.patch"
+            }
+          }
+        ],
+        "stalled": [
+          {
+            "href": "https://github.com/w3c/media-source/pull/228",
+            "number": 228,
+            "title": "Separate Definitions section from Introduction",
+            "labels": [],
+            "created_at": "2019-02-02T02:06:28Z",
+            "updated_at": "2019-02-02T02:06:42Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/media-source/pulls/228",
+              "html_url": "https://github.com/w3c/media-source/pull/228",
+              "diff_url": "https://github.com/w3c/media-source/pull/228.diff",
+              "patch_url": "https://github.com/w3c/media-source/pull/228.patch"
+            }
+          }
+        ]
+      },
+      "check_runs": [
+        {
+          "href": "https://github.com/w3c/media-source/runs/1465566910",
+          "conclusion": "success",
+          "title": "GitHub Pages successfully built your site.",
+          "summary": "Your website is ready at [`https://w3c.github.io/media-source`](https://w3c.github.io/media-source)"
+        }
+      ],
+      "repoErrors": [
+        "invalidcontributing",
+        "nocodeofconduct",
+        "invalidlicense",
+        "unprotectedbranchforadmin",
+        "norequiredreview"
+      ]
+    }
+  ]
+}
