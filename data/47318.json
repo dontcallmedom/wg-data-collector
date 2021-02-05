@@ -198,7 +198,9 @@
           "summary": "There are 0 failures, 1 warnings, and 0 notices."
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "tr": "https://www.w3.org/TR/webrtc-stats/",
@@ -208,8 +210,8 @@
       "editorDraft": "https://w3c.github.io/webrtc-stats/",
       "trStatus": "CRD",
       "latestVersion": {
-        "href": "https://www.w3.org/TR/2021/CRD-webrtc-stats-20210119/",
-        "date": "2021-01-19",
+        "href": "https://www.w3.org/TR/2021/CRD-webrtc-stats-20210120/",
+        "date": "2021-01-20",
         "recTrack": true
       },
       "recTrack": true,
@@ -285,34 +287,7 @@
         "prs": []
       },
       "issues": {
-        "recent": [
-          {
-            "href": "https://github.com/w3c/webrtc-stats/issues/593",
-            "number": 593,
-            "title": "bytesReceived for local inbound could have a clearer definition",
-            "labels": [],
-            "created_at": "2021-01-13T11:30:08Z",
-            "updated_at": "2021-01-13T11:30:08Z"
-          },
-          {
-            "href": "https://github.com/w3c/webrtc-stats/issues/592",
-            "number": 592,
-            "title": "Is packetsRecieved on the sender side using the correct method of estimation?",
-            "labels": [
-              {
-                "id": 124889688,
-                "node_id": "MDU6TGFiZWwxMjQ4ODk2ODg=",
-                "url": "https://api.github.com/repos/w3c/webrtc-stats/labels/PR%20exists",
-                "name": "PR exists",
-                "color": "159818",
-                "default": false,
-                "description": null
-              }
-            ],
-            "created_at": "2021-01-13T10:42:18Z",
-            "updated_at": "2021-01-13T14:09:54Z"
-          }
-        ],
+        "recent": [],
         "needWork": [
           {
             "href": "https://github.com/w3c/webrtc-stats/issues/593",
@@ -459,30 +434,6 @@
       "prs": {
         "open": [
           {
-            "href": "https://github.com/w3c/webrtc-stats/pull/591",
-            "number": 591,
-            "title": "Correct packetsReceived sender-side algorithm to rely on RR.",
-            "labels": [
-              {
-                "id": 1302466845,
-                "node_id": "MDU6TGFiZWwxMzAyNDY2ODQ1",
-                "url": "https://api.github.com/repos/w3c/webrtc-stats/labels/Editors%20can%20integrate",
-                "name": "Editors can integrate",
-                "color": "c5def5",
-                "default": false,
-                "description": ""
-              }
-            ],
-            "created_at": "2021-01-12T17:16:52Z",
-            "updated_at": "2021-01-19T14:23:30Z",
-            "pull_request": {
-              "url": "https://api.github.com/repos/w3c/webrtc-stats/pulls/591",
-              "html_url": "https://github.com/w3c/webrtc-stats/pull/591",
-              "diff_url": "https://github.com/w3c/webrtc-stats/pull/591.diff",
-              "patch_url": "https://github.com/w3c/webrtc-stats/pull/591.patch"
-            }
-          },
-          {
             "href": "https://github.com/w3c/webrtc-stats/pull/559",
             "number": 559,
             "title": "RTCScalableVideoCodecLayerStats added",
@@ -536,19 +487,21 @@
       },
       "check_runs": [
         {
-          "href": "https://github.com/w3c/webrtc-stats/runs/1728279651",
+          "href": "https://github.com/w3c/webrtc-stats/runs/1734815265",
           "conclusion": "success",
           "title": "GitHub Pages successfully built your site.",
           "summary": "Your website is ready at [`https://w3c.github.io/webrtc-stats`](https://w3c.github.io/webrtc-stats)"
         },
         {
-          "href": "https://github.com/w3c/webrtc-stats/runs/1728278743",
+          "href": "https://github.com/w3c/webrtc-stats/runs/1734814861",
           "conclusion": "success",
           "title": "Validate and Publish",
           "summary": "There are 0 failures, 1 warnings, and 0 notices."
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "tr": "https://www.w3.org/TR/mediacapture-streams/",
@@ -558,8 +511,8 @@
       "editorDraft": "https://w3c.github.io/mediacapture-main/",
       "trStatus": "CRD",
       "latestVersion": {
-        "href": "https://www.w3.org/TR/2021/CRD-mediacapture-streams-20210119/",
-        "date": "2021-01-19",
+        "href": "https://www.w3.org/TR/2021/CRD-mediacapture-streams-20210128/",
+        "date": "2021-01-28",
         "recTrack": true
       },
       "recTrack": true,
@@ -593,11 +546,7 @@
           "ULongRange": 2,
           "ConstrainULongRange": 2,
           "ConstrainBooleanParameters": 2,
-          "ConstrainDOMStringParameters": 2,
-          "Capabilities": 0,
-          "Settings": 0,
-          "ConstraintSet": 0,
-          "Constraints": 1
+          "ConstrainDOMStringParameters": 2
         },
         "enums": {
           "MediaStreamTrackState": 2,
@@ -605,7 +554,7 @@
           "VideoResizeModeEnum": 2,
           "MediaDeviceKind": 3
         },
-        "total": 144
+        "total": 143
       },
       "implementationGaps": [
         {
@@ -641,7 +590,7 @@
             "class": "passes-half"
           },
           "safari": {
-            "passes": 311,
+            "passes": 316,
             "total": 420,
             "class": "passes-half"
           }
@@ -805,22 +754,6 @@
         "recent": [],
         "needWork": [
           {
-            "href": "https://github.com/w3c/mediacapture-main/issues/762",
-            "number": 762,
-            "title": "resizeMode: \"none\" should imply native frame rates",
-            "labels": [],
-            "created_at": "2020-12-19T18:30:00Z",
-            "updated_at": "2021-01-05T15:40:32Z"
-          },
-          {
-            "href": "https://github.com/w3c/mediacapture-main/issues/761",
-            "number": 761,
-            "title": "Is getSettings returning rotated dimensions a footgun?",
-            "labels": [],
-            "created_at": "2020-12-17T22:31:06Z",
-            "updated_at": "2020-12-17T22:31:06Z"
-          },
-          {
             "href": "https://github.com/w3c/mediacapture-main/issues/752",
             "number": 752,
             "title": "Broken foreground detection",
@@ -829,64 +762,12 @@
             "updated_at": "2021-01-11T15:43:51Z"
           },
           {
-            "href": "https://github.com/w3c/mediacapture-main/issues/729",
-            "number": 729,
-            "title": "applyConstraints algorithm is imprecise in how to select the actual settings values",
-            "labels": [],
-            "created_at": "2020-09-28T13:01:02Z",
-            "updated_at": "2021-01-11T15:39:54Z"
-          },
-          {
-            "href": "https://github.com/w3c/mediacapture-main/issues/725",
-            "number": 725,
-            "title": "Simplify device selection algorithm",
-            "labels": [],
-            "created_at": "2020-09-18T14:05:46Z",
-            "updated_at": "2020-12-10T15:39:13Z"
-          },
-          {
             "href": "https://github.com/w3c/mediacapture-main/issues/675",
             "number": 675,
             "title": "Use new Storage endpoint model for deviceId",
             "labels": [],
             "created_at": "2020-04-02T15:33:17Z",
             "updated_at": "2021-01-08T08:53:11Z"
-          },
-          {
-            "href": "https://github.com/w3c/mediacapture-main/issues/672",
-            "number": 672,
-            "title": "Deprecate inputDeviceInfo.getCapabilities() for better privacy",
-            "labels": [
-              {
-                "id": 2391682878,
-                "node_id": "MDU6TGFiZWwyMzkxNjgyODc4",
-                "url": "https://api.github.com/repos/w3c/mediacapture-main/labels/Feature%20at%20risk",
-                "name": "Feature at risk",
-                "color": "b53234",
-                "default": false,
-                "description": ""
-              },
-              {
-                "id": 2391664037,
-                "node_id": "MDU6TGFiZWwyMzkxNjY0MDM3",
-                "url": "https://api.github.com/repos/w3c/mediacapture-main/labels/TPAC%202020",
-                "name": "TPAC 2020",
-                "color": "f9d0c4",
-                "default": false,
-                "description": ""
-              },
-              {
-                "id": 1831510905,
-                "node_id": "MDU6TGFiZWwxODMxNTEwOTA1",
-                "url": "https://api.github.com/repos/w3c/mediacapture-main/labels/privacy-needs-resolution",
-                "name": "privacy-needs-resolution",
-                "color": "d4af37",
-                "default": false,
-                "description": "Issue the Privacy Group has raised and looks for a response on."
-              }
-            ],
-            "created_at": "2020-03-27T22:02:35Z",
-            "updated_at": "2020-10-13T14:38:40Z"
           },
           {
             "href": "https://github.com/w3c/mediacapture-main/issues/536",
@@ -912,7 +793,7 @@
               }
             ],
             "created_at": "2018-08-10T07:06:10Z",
-            "updated_at": "2020-11-23T16:14:44Z"
+            "updated_at": "2021-02-04T15:46:58Z"
           },
           {
             "href": "https://github.com/w3c/mediacapture-main/issues/519",
@@ -928,72 +809,24 @@
             "title": "How to handle changes to the set of tracks in a MediaStream assigned to an element via the srcObject attribute",
             "labels": [],
             "created_at": "2017-05-17T10:48:35Z",
-            "updated_at": "2017-05-25T14:55:15Z"
+            "updated_at": "2021-01-25T16:22:47Z"
           }
         ]
       },
       "prs": {
         "open": [
           {
-            "href": "https://github.com/w3c/mediacapture-main/pull/767",
-            "number": 767,
-            "title": "Mark track/ended as exported definition",
-            "labels": [
-              {
-                "id": 151898314,
-                "node_id": "MDU6TGFiZWwxNTE4OTgzMTQ=",
-                "url": "https://api.github.com/repos/w3c/mediacapture-main/labels/editorial",
-                "name": "editorial",
-                "color": "006b75",
-                "default": false,
-                "description": null
-              }
-            ],
-            "created_at": "2021-01-19T13:27:59Z",
-            "updated_at": "2021-01-19T13:28:20Z",
-            "pull_request": {
-              "url": "https://api.github.com/repos/w3c/mediacapture-main/pulls/767",
-              "html_url": "https://github.com/w3c/mediacapture-main/pull/767",
-              "diff_url": "https://github.com/w3c/mediacapture-main/pull/767.diff",
-              "patch_url": "https://github.com/w3c/mediacapture-main/pull/767.patch"
-            }
-          },
-          {
-            "href": "https://github.com/w3c/mediacapture-main/pull/766",
-            "number": 766,
-            "title": "Fitness distance for bool placeholder & constraints not supported by device.",
+            "href": "https://github.com/w3c/mediacapture-main/pull/772",
+            "number": 772,
+            "title": "Improve examples (limit use of getSupportedConstraints() to where needed)",
             "labels": [],
-            "created_at": "2021-01-14T20:26:07Z",
-            "updated_at": "2021-01-19T18:52:20Z",
+            "created_at": "2021-02-04T14:52:23Z",
+            "updated_at": "2021-02-04T23:58:21Z",
             "pull_request": {
-              "url": "https://api.github.com/repos/w3c/mediacapture-main/pulls/766",
-              "html_url": "https://github.com/w3c/mediacapture-main/pull/766",
-              "diff_url": "https://github.com/w3c/mediacapture-main/pull/766.diff",
-              "patch_url": "https://github.com/w3c/mediacapture-main/pull/766.patch"
-            }
-          },
-          {
-            "href": "https://github.com/w3c/mediacapture-main/pull/742",
-            "number": 742,
-            "title": "Define the fitness distance for unexposed constraints",
-            "labels": [
-              {
-                "id": 2518559064,
-                "node_id": "MDU6TGFiZWwyNTE4NTU5MDY0",
-                "url": "https://api.github.com/repos/w3c/mediacapture-main/labels/December%202020%20Interim",
-                "name": "December 2020 Interim",
-                "color": "aef9a2",
-                "default": false,
-                "description": ""
-              }
-            ],
-            "created_at": "2020-10-30T16:06:15Z",
-            "updated_at": "2021-01-14T20:28:24Z",
-            "pull_request": {
-              "url": "https://api.github.com/repos/w3c/mediacapture-main/pulls/742",
-              "html_url": "https://github.com/w3c/mediacapture-main/pull/742",
-              "diff_url": "https://github.com/w3c/mediacapture-main/pull/742.diff",
-              "patch_url": "https://github.com/w3c/mediacapture-main/pull/742.patch"
+              "url": "https://api.github.com/repos/w3c/mediacapture-main/pulls/772",
+              "html_url": "https://github.com/w3c/mediacapture-main/pull/772",
+              "diff_url": "https://github.com/w3c/mediacapture-main/pull/772.diff",
+              "patch_url": "https://github.com/w3c/mediacapture-main/pull/772.patch"
             }
           }
         ],
@@ -1001,19 +834,21 @@
       },
       "check_runs": [
         {
-          "href": "https://github.com/w3c/mediacapture-main/runs/1728799611",
+          "href": "https://github.com/w3c/mediacapture-main/runs/1831943952",
           "conclusion": "success",
           "title": "GitHub Pages successfully built your site.",
           "summary": "Your website is ready at [`https://w3c.github.io/mediacapture-main`](https://w3c.github.io/mediacapture-main)"
         },
         {
-          "href": "https://github.com/w3c/mediacapture-main/runs/1728799187",
+          "href": "https://github.com/w3c/mediacapture-main/runs/1831942902",
           "conclusion": "success",
           "title": "Validate and Publish",
           "summary": "There are 0 failures, 1 warnings, and 0 notices."
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "tr": "https://www.w3.org/TR/webrtc-identity/",
@@ -1306,7 +1141,9 @@
           "summary": "<a href='https://travis-ci.com/github/w3c/webrtc-identity/builds/213669793'><img src='https://travis-ci.com/images/stroke-icons/icon-passed.png' height='11'> The build</a> **passed**, just like the previous build."
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "tr": "https://www.w3.org/TR/image-capture/",
@@ -1377,9 +1214,9 @@
         "assertions": 189,
         "impl": {
           "chrome": {
-            "passes": 189,
+            "passes": 120,
             "total": 189,
-            "class": "passes-all"
+            "class": "passes-half"
           },
           "firefox": {
             "passes": 74,
@@ -1478,7 +1315,7 @@
             "title": "Does PTZ look good to you?",
             "labels": [],
             "created_at": "2020-09-28T13:49:17Z",
-            "updated_at": "2020-12-31T16:04:48Z"
+            "updated_at": "2021-01-25T14:30:07Z"
           },
           {
             "href": "https://github.com/w3c/mediacapture-image/issues/262",
@@ -1820,6 +1657,30 @@
         ],
         "stalled": [
           {
+            "href": "https://github.com/w3c/mediacapture-image/pull/260",
+            "number": 260,
+            "title": "Allow PTZ support to be always exposed in capabilities",
+            "labels": [
+              {
+                "id": 2018267379,
+                "node_id": "MDU6TGFiZWwyMDE4MjY3Mzc5",
+                "url": "https://api.github.com/repos/w3c/mediacapture-image/labels/PTZ",
+                "name": "PTZ",
+                "color": "3e2a93",
+                "default": false,
+                "description": "Pan-Tilt-Zoom"
+              }
+            ],
+            "created_at": "2020-09-17T20:27:44Z",
+            "updated_at": "2020-11-04T23:11:11Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/mediacapture-image/pulls/260",
+              "html_url": "https://github.com/w3c/mediacapture-image/pull/260",
+              "diff_url": "https://github.com/w3c/mediacapture-image/pull/260.diff",
+              "patch_url": "https://github.com/w3c/mediacapture-image/pull/260.patch"
+            }
+          },
+          {
             "href": "https://github.com/w3c/mediacapture-image/pull/185",
             "number": 185,
             "title": "Add support to get and set desired image format",
@@ -1853,7 +1714,9 @@
           "summary": null
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "tr": "https://www.w3.org/TR/mediacapture-depth/",
@@ -2297,6 +2160,15 @@
                 "description": ""
               },
               {
+                "id": 2125213502,
+                "node_id": "MDU6TGFiZWwyMTI1MjEzNTAy",
+                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-s_webrtc",
+                "name": "wg-s_webrtc",
+                "color": "ededed",
+                "default": false,
+                "description": null
+              },
+              {
                 "id": 79824268,
                 "node_id": "MDU6TGFiZWw3OTgyNDI2OA==",
                 "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-webrtc",
@@ -2307,7 +2179,7 @@
               }
             ],
             "created_at": "2017-10-17T13:14:57Z",
-            "updated_at": "2019-01-21T15:35:39Z",
+            "updated_at": "2021-01-20T09:24:47Z",
             "pull_request": {
               "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/7862",
               "html_url": "https://github.com/web-platform-tests/wpt/pull/7862",
@@ -2852,7 +2724,7 @@
         "assertions": 187,
         "impl": {
           "chrome": {
-            "passes": 129,
+            "passes": 131,
             "total": 187,
             "class": "passes-half"
           },
@@ -2862,9 +2734,9 @@
             "class": "passes-lots"
           },
           "safari": {
-            "passes": 129,
+            "passes": 163,
             "total": 182,
-            "class": "passes-half"
+            "class": "passes-lots"
           }
         },
         "issues": [],
@@ -2918,7 +2790,7 @@
               }
             ],
             "created_at": "2019-01-25T03:39:14Z",
-            "updated_at": "2019-04-07T16:15:24Z",
+            "updated_at": "2021-01-20T09:37:07Z",
             "pull_request": {
               "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/15062",
               "html_url": "https://github.com/web-platform-tests/wpt/pull/15062",
@@ -3293,13 +3165,15 @@
       },
       "check_runs": [
         {
-          "href": "https://github.com/w3c/mediacapture-record/runs/1728802244",
+          "href": "https://github.com/w3c/mediacapture-record/runs/1837838699",
           "conclusion": "success",
           "title": null,
           "summary": null
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "tr": "https://www.w3.org/TR/mst-content-hint/",
@@ -3353,7 +3227,7 @@
             "class": "passes-a-few"
           },
           "safari": {
-            "passes": 15,
+            "passes": 19,
             "total": 24,
             "class": "passes-half"
           }
@@ -3627,7 +3501,9 @@
           "summary": null
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "tr": "https://www.w3.org/TR/screen-capture/",
@@ -3719,269 +3595,10 @@
             "updated_at": "2020-05-13T11:45:13Z"
           }
         ],
-        "prs": [
-          {
-            "href": "https://github.com/web-platform-tests/wpt/pull/14619",
-            "number": 14619,
-            "title": "Make `--verbose` as an alias of `--log-mach-level debug`",
-            "labels": [
-              {
-                "id": 45468014,
-                "node_id": "MDU6TGFiZWw0NTQ2ODAxNA==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/2dcontext",
-                "name": "2dcontext",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 576596038,
-                "node_id": "MDU6TGFiZWw1NzY1OTYwMzg=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/CSS2",
-                "name": "CSS2",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 556243041,
-                "node_id": "MDU6TGFiZWw1NTYyNDMwNDE=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/background-fetch",
-                "name": "background-fetch",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 1167874816,
-                "node_id": "MDU6TGFiZWwxMTY3ODc0ODE2",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/certs",
-                "name": "certs",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 112135421,
-                "node_id": "MDU6TGFiZWwxMTIxMzU0MjE=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/clipboard-apis",
-                "name": "clipboard-apis",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 751559704,
-                "node_id": "MDU6TGFiZWw3NTE1NTk3MDQ=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/css-contain",
-                "name": "css-contain",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 578828612,
-                "node_id": "MDU6TGFiZWw1Nzg4Mjg2MTI=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/css-multicol",
-                "name": "css-multicol",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 573642247,
-                "node_id": "MDU6TGFiZWw1NzM2NDIyNDc=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/css-sizing",
-                "name": "css-sizing",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 44516115,
-                "node_id": "MDU6TGFiZWw0NDUxNjExNQ==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/dom",
-                "name": "dom",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 554609111,
-                "node_id": "MDU6TGFiZWw1NTQ2MDkxMTE=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/feature-policy",
-                "name": "feature-policy",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 195095545,
-                "node_id": "MDU6TGFiZWwxOTUwOTU1NDU=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/fetch",
-                "name": "fetch",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 724205423,
-                "node_id": "MDU6TGFiZWw3MjQyMDU0MjM=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/filter-effects",
-                "name": "filter-effects",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 44516029,
-                "node_id": "MDU6TGFiZWw0NDUxNjAyOQ==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/html",
-                "name": "html",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 45230790,
-                "node_id": "MDU6TGFiZWw0NTIzMDc5MA==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/infra",
-                "name": "infra",
-                "color": "fbca04",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 578824243,
-                "node_id": "MDU6TGFiZWw1Nzg4MjQyNDM=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/mediaqueries",
-                "name": "mediaqueries",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 794786716,
-                "node_id": "MDU6TGFiZWw3OTQ3ODY3MTY=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/quirks",
-                "name": "quirks",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 986147532,
-                "node_id": "MDU6TGFiZWw5ODYxNDc1MzI=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/screen-capture",
-                "name": "screen-capture",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 680826178,
-                "node_id": "MDU6TGFiZWw2ODA4MjYxNzg=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/testharness.js",
-                "name": "testharness.js",
-                "color": "fef2c0",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 576596039,
-                "node_id": "MDU6TGFiZWw1NzY1OTYwMzk=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/vendor-imports",
-                "name": "vendor-imports",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 93361070,
-                "node_id": "MDU6TGFiZWw5MzM2MTA3MA==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-css",
-                "name": "wg-css",
-                "color": "0052cc",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 942306527,
-                "node_id": "MDU6TGFiZWw5NDIzMDY1Mjc=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-das",
-                "name": "wg-das",
-                "color": "0052cc",
-                "default": false,
-                "description": ""
-              },
-              {
-                "id": 80290214,
-                "node_id": "MDU6TGFiZWw4MDI5MDIxNA==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-html",
-                "name": "wg-html",
-                "color": "0052cc",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 294418025,
-                "node_id": "MDU6TGFiZWwyOTQ0MTgwMjU=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-webplatform",
-                "name": "wg-webplatform",
-                "color": "0052cc",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 79824268,
-                "node_id": "MDU6TGFiZWw3OTgyNDI2OA==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-webrtc",
-                "name": "wg-webrtc",
-                "color": "0052cc",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 626654083,
-                "node_id": "MDU6TGFiZWw2MjY2NTQwODM=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wpt",
-                "name": "wpt",
-                "color": "fef2c0",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 680826313,
-                "node_id": "MDU6TGFiZWw2ODA4MjYzMTM=",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wptrunner",
-                "name": "wptrunner",
-                "color": "fef2c0",
-                "default": false,
-                "description": "The automated test runner, commonly called through ./wpt run"
-              }
-            ],
-            "created_at": "2018-12-20T12:27:45Z",
-            "updated_at": "2020-01-31T19:19:24Z",
-            "pull_request": {
-              "url": "https://api.github.com/repos/web-platform-tests/wpt/pulls/14619",
-              "html_url": "https://github.com/web-platform-tests/wpt/pull/14619",
-              "diff_url": "https://github.com/web-platform-tests/wpt/pull/14619.diff",
-              "patch_url": "https://github.com/web-platform-tests/wpt/pull/14619.patch"
-            }
-          }
-        ]
+        "prs": []
       },
       "issues": {
-        "recent": [
-          {
-            "href": "https://github.com/w3c/mediacapture-screen-share/issues/158",
-            "number": 158,
-            "title": "Add ability to crop a MediaStream obtained through the share-this-tab API",
-            "labels": [],
-            "created_at": "2021-01-19T21:31:25Z",
-            "updated_at": "2021-01-19T22:36:53Z"
-          }
-        ],
+        "recent": [],
         "needWork": [
           {
             "href": "https://github.com/w3c/mediacapture-screen-share/issues/158",
@@ -3989,7 +3606,7 @@
             "title": "Add ability to crop a MediaStream obtained through the share-this-tab API",
             "labels": [],
             "created_at": "2021-01-19T21:31:25Z",
-            "updated_at": "2021-01-19T22:36:53Z"
+            "updated_at": "2021-01-28T22:24:43Z"
           },
           {
             "href": "https://github.com/w3c/mediacapture-screen-share/issues/157",
@@ -4176,30 +3793,6 @@
       "prs": {
         "open": [
           {
-            "href": "https://github.com/w3c/mediacapture-screen-share/pull/153",
-            "number": 153,
-            "title": "Adopt more automatic links",
-            "labels": [
-              {
-                "id": 1040000104,
-                "node_id": "MDU6TGFiZWwxMDQwMDAwMTA0",
-                "url": "https://api.github.com/repos/w3c/mediacapture-screen-share/labels/Editorial",
-                "name": "Editorial",
-                "color": "006b75",
-                "default": false,
-                "description": ""
-              }
-            ],
-            "created_at": "2020-11-27T14:29:23Z",
-            "updated_at": "2021-01-19T14:28:32Z",
-            "pull_request": {
-              "url": "https://api.github.com/repos/w3c/mediacapture-screen-share/pulls/153",
-              "html_url": "https://github.com/w3c/mediacapture-screen-share/pull/153",
-              "diff_url": "https://github.com/w3c/mediacapture-screen-share/pull/153.diff",
-              "patch_url": "https://github.com/w3c/mediacapture-screen-share/pull/153.patch"
-            }
-          },
-          {
             "href": "https://github.com/w3c/mediacapture-screen-share/pull/148",
             "number": 148,
             "title": "Add getCurrentBrowsingContextMedia",
@@ -4215,7 +3808,7 @@
               }
             ],
             "created_at": "2020-10-07T13:53:28Z",
-            "updated_at": "2020-12-04T02:15:39Z",
+            "updated_at": "2021-01-26T10:39:39Z",
             "pull_request": {
               "url": "https://api.github.com/repos/w3c/mediacapture-screen-share/pulls/148",
               "html_url": "https://github.com/w3c/mediacapture-screen-share/pull/148",
@@ -4228,16 +3821,16 @@
       },
       "check_runs": [
         {
-          "href": "https://github.com/w3c/mediacapture-screen-share/runs/1728804698",
+          "href": "https://github.com/w3c/mediacapture-screen-share/runs/1837899690",
           "conclusion": "success",
           "title": "GitHub Pages successfully built your site.",
           "summary": "Your website is ready at [`https://w3c.github.io/mediacapture-screen-share`](https://w3c.github.io/mediacapture-screen-share)"
         },
         {
-          "href": "https://github.com/w3c/mediacapture-screen-share/runs/1728803900",
-          "conclusion": "failure",
-          "title": "Validate and Publish",
-          "summary": "There are 1 failures, 0 warnings, and 0 notices."
+          "href": "https://github.com/w3c/mediacapture-screen-share/runs/1837899341",
+          "conclusion": "success",
+          "title": null,
+          "summary": null
         }
       ],
       "repoErrors": []
@@ -4320,30 +3913,6 @@
         "recent": [],
         "needWork": [
           {
-            "href": "https://github.com/w3c/webrtc-priority/issues/17",
-            "number": 17,
-            "title": "Improve explainer according to TAG question",
-            "labels": [],
-            "created_at": "2020-11-23T14:06:13Z",
-            "updated_at": "2020-11-23T14:06:13Z"
-          },
-          {
-            "href": "https://github.com/w3c/webrtc-priority/issues/16",
-            "number": 16,
-            "title": "Wide review ",
-            "labels": [],
-            "created_at": "2020-09-24T11:08:49Z",
-            "updated_at": "2020-11-02T18:21:21Z"
-          },
-          {
-            "href": "https://github.com/w3c/webrtc-priority/issues/13",
-            "number": 13,
-            "title": "Network Tokens and WebRTC QoS",
-            "labels": [],
-            "created_at": "2020-06-29T22:14:17Z",
-            "updated_at": "2020-06-29T22:14:17Z"
-          },
-          {
             "href": "https://github.com/w3c/webrtc-priority/issues/11",
             "number": 11,
             "title": "Create idlharness test for priority spec",
@@ -4358,14 +3927,6 @@
             "labels": [],
             "created_at": "2020-01-16T13:47:51Z",
             "updated_at": "2020-01-16T13:48:20Z"
-          },
-          {
-            "href": "https://github.com/w3c/webrtc-priority/issues/6",
-            "number": 6,
-            "title": "Prepare spec for TAG review",
-            "labels": [],
-            "created_at": "2019-12-05T13:35:19Z",
-            "updated_at": "2020-06-11T08:44:54Z"
           }
         ]
       },
@@ -4381,7 +3942,9 @@
           "summary": "Your website is ready at [`https://w3c.github.io/webrtc-priority`](https://w3c.github.io/webrtc-priority)"
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "title": "A repository for \"WebRTC 1.1+\" features",
@@ -4403,9 +3966,9 @@
         "assertions": 42,
         "impl": {
           "chrome": {
-            "passes": 28,
+            "passes": 38,
             "total": 42,
-            "class": "passes-half"
+            "class": "passes-lots"
           },
           "firefox": {
             "passes": 17,
@@ -4413,7 +3976,7 @@
             "class": "passes-a-few"
           },
           "safari": {
-            "passes": 14,
+            "passes": 12,
             "total": 42,
             "class": "passes-hardly"
           }
@@ -4424,25 +3987,57 @@
       "issues": {
         "recent": [
           {
-            "href": "https://github.com/w3c/webrtc-extensions/issues/63",
-            "number": 63,
-            "title": "Enabling opus stereo audio without SDP munging (stereo=1)",
+            "href": "https://github.com/w3c/webrtc-extensions/issues/68",
+            "number": 68,
+            "title": "Network Tokens and WebRTC QoS",
+            "labels": [],
+            "created_at": "2021-02-02T23:17:08Z",
+            "updated_at": "2021-02-03T01:43:18Z"
+          }
+        ],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/webrtc-extensions/issues/68",
+            "number": 68,
+            "title": "Network Tokens and WebRTC QoS",
+            "labels": [],
+            "created_at": "2021-02-02T23:17:08Z",
+            "updated_at": "2021-02-03T01:43:18Z"
+          },
+          {
+            "href": "https://github.com/w3c/webrtc-extensions/issues/67",
+            "number": 67,
+            "title": "Adopt as working group draft",
+            "labels": [],
+            "created_at": "2021-01-28T15:18:12Z",
+            "updated_at": "2021-01-28T15:18:12Z"
+          },
+          {
+            "href": "https://github.com/w3c/webrtc-extensions/issues/66",
+            "number": 66,
+            "title": "BUNDLE-only m-sections",
             "labels": [
               {
                 "id": 2657955758,
                 "node_id": "MDU6TGFiZWwyNjU3OTU1NzU4",
-                "url": "https://api.github.com/repos/w3c/webrtc-extensions/labels/January%20Virtual%20Interim",
-                "name": "January Virtual Interim",
+                "url": "https://api.github.com/repos/w3c/webrtc-extensions/labels/February%20Virtual%20Interim",
+                "name": "February Virtual Interim",
                 "color": "3A78EB",
                 "default": false,
                 "description": ""
               }
             ],
-            "created_at": "2021-01-14T14:51:46Z",
-            "updated_at": "2021-01-19T12:10:25Z"
-          }
-        ],
-        "needWork": [
+            "created_at": "2021-01-24T03:01:26Z",
+            "updated_at": "2021-01-24T03:01:26Z"
+          },
+          {
+            "href": "https://github.com/w3c/webrtc-extensions/issues/64",
+            "number": 64,
+            "title": "Investigate the possibility to interact with data channel in workers",
+            "labels": [],
+            "created_at": "2021-01-21T15:40:47Z",
+            "updated_at": "2021-01-26T21:04:02Z"
+          },
           {
             "href": "https://github.com/w3c/webrtc-extensions/issues/63",
             "number": 63,
@@ -4451,8 +4046,8 @@
               {
                 "id": 2657955758,
                 "node_id": "MDU6TGFiZWwyNjU3OTU1NzU4",
-                "url": "https://api.github.com/repos/w3c/webrtc-extensions/labels/January%20Virtual%20Interim",
-                "name": "January Virtual Interim",
+                "url": "https://api.github.com/repos/w3c/webrtc-extensions/labels/February%20Virtual%20Interim",
+                "name": "February Virtual Interim",
                 "color": "3A78EB",
                 "default": false,
                 "description": ""
@@ -4460,6 +4055,14 @@
             ],
             "created_at": "2021-01-14T14:51:46Z",
             "updated_at": "2021-01-19T12:10:25Z"
+          },
+          {
+            "href": "https://github.com/w3c/webrtc-extensions/issues/65",
+            "number": 65,
+            "title": "fractionLost missing from MTI stats list",
+            "labels": [],
+            "created_at": "2021-01-10T13:03:13Z",
+            "updated_at": "2021-01-26T19:16:58Z"
           },
           {
             "href": "https://github.com/w3c/webrtc-extensions/issues/58",
@@ -4512,8 +4115,8 @@
               {
                 "id": 2657955758,
                 "node_id": "MDU6TGFiZWwyNjU3OTU1NzU4",
-                "url": "https://api.github.com/repos/w3c/webrtc-extensions/labels/January%20Virtual%20Interim",
-                "name": "January Virtual Interim",
+                "url": "https://api.github.com/repos/w3c/webrtc-extensions/labels/February%20Virtual%20Interim",
+                "name": "February Virtual Interim",
                 "color": "3A78EB",
                 "default": false,
                 "description": ""
@@ -4692,7 +4295,9 @@
           "summary": null
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "title": "Extension to the RTCIceTransport interface defined in WebRTC 1.0",
@@ -5006,7 +4611,7 @@
             "title": "Editorial: Align with Web IDL specification",
             "labels": [],
             "created_at": "2020-12-21T13:23:47Z",
-            "updated_at": "2020-12-21T13:23:55Z",
+            "updated_at": "2021-01-25T22:22:49Z",
             "pull_request": {
               "url": "https://api.github.com/repos/w3c/webrtc-ice/pulls/40",
               "html_url": "https://github.com/w3c/webrtc-ice/pull/40",
@@ -5108,7 +4713,9 @@
           "summary": null
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "title": "Extensions to Media Capture and Streams by the WebRTC Working Group",
@@ -5152,6 +4759,14 @@
         "recent": [],
         "needWork": [
           {
+            "href": "https://github.com/w3c/mediacapture-extensions/issues/16",
+            "number": 16,
+            "title": "Investigate the possibility to transfer MediaStreamTrack",
+            "labels": [],
+            "created_at": "2021-01-22T12:39:37Z",
+            "updated_at": "2021-02-04T15:16:07Z"
+          },
+          {
             "href": "https://github.com/w3c/mediacapture-extensions/issues/14",
             "number": 14,
             "title": "Do we need an infrared constraint?",
@@ -5174,6 +4789,14 @@
             "labels": [],
             "created_at": "2020-10-21T15:44:20Z",
             "updated_at": "2020-11-19T15:39:25Z"
+          },
+          {
+            "href": "https://github.com/w3c/mediacapture-extensions/issues/18",
+            "number": 18,
+            "title": "Simplify device selection algorithm",
+            "labels": [],
+            "created_at": "2020-09-18T14:05:46Z",
+            "updated_at": "2021-02-04T15:57:19Z"
           },
           {
             "href": "https://github.com/w3c/mediacapture-extensions/issues/8",
@@ -5200,6 +4823,14 @@
             "updated_at": "2020-08-27T02:50:45Z"
           },
           {
+            "href": "https://github.com/w3c/mediacapture-extensions/issues/17",
+            "number": 17,
+            "title": "Deprecate inputDeviceInfo.getCapabilities() for better privacy",
+            "labels": [],
+            "created_at": "2020-03-27T22:02:35Z",
+            "updated_at": "2021-01-25T16:25:35Z"
+          },
+          {
             "href": "https://github.com/w3c/mediacapture-extensions/issues/6",
             "number": 6,
             "title": "\"user-chooses\": Does required constraints make any sense now?",
@@ -5221,7 +4852,7 @@
             "title": "Enforcing user gesture for getUserMedia",
             "labels": [],
             "created_at": "2019-11-04T08:20:20Z",
-            "updated_at": "2021-01-15T17:30:24Z"
+            "updated_at": "2021-01-25T22:25:27Z"
           },
           {
             "href": "https://github.com/w3c/mediacapture-extensions/issues/10",
@@ -5271,33 +4902,37 @@
         "interfaces": {
           "RTCEncodedVideoFrame": 5,
           "RTCEncodedAudioFrame": 4,
-          "RTCRtpSender": 1,
-          "RTCRtpReceiver": 1
+          "SFrameTransform": 2,
+          "RTCRtpScriptTransform": 2,
+          "RTCRtpSender": 2,
+          "RTCRtpReceiver": 2
         },
         "dictionaries": {
           "RTCInsertableStreams": 2,
           "RTCEncodedVideoFrameMetadata": 8,
           "RTCEncodedAudioFrameMetadata": 2,
+          "SFrameTransformOptions": 1,
           "RTCConfiguration": 1
         },
         "enums": {
-          "RTCEncodedVideoFrameType": 3
+          "RTCEncodedVideoFrameType": 3,
+          "SFrameTransformRole": 2
         },
-        "total": 27
+        "total": 36
       },
       "implementationGaps": [
         {
           "interface": "RTCEncodedVideoFrame",
           "missing": [
             {
-              "noimplementations": "chrome, firefox, safari",
+              "noimplementations": "firefox, safari",
               "members": [
                 "type",
                 "timestamp",
                 "data",
                 "getMetadata"
               ],
-              "severity": "failure"
+              "severity": "warning"
             }
           ]
         },
@@ -5305,13 +4940,13 @@
           "interface": "RTCEncodedAudioFrame",
           "missing": [
             {
-              "noimplementations": "chrome, firefox, safari",
+              "noimplementations": "firefox, safari",
               "members": [
                 "timestamp",
                 "data",
                 "getMetadata"
               ],
-              "severity": "failure"
+              "severity": "warning"
             }
           ]
         },
@@ -5319,11 +4954,11 @@
           "interface": "RTCRtpSender",
           "missing": [
             {
-              "noimplementations": "chrome, firefox, safari",
+              "noimplementations": "firefox, safari",
               "members": [
                 "createEncodedStreams"
               ],
-              "severity": "failure"
+              "severity": "warning"
             }
           ]
         },
@@ -5331,18 +4966,18 @@
           "interface": "RTCRtpReceiver",
           "missing": [
             {
-              "noimplementations": "chrome, firefox, safari",
+              "noimplementations": "firefox, safari",
               "members": [
                 "createEncodedStreams"
               ],
-              "severity": "failure"
+              "severity": "warning"
             }
           ]
         }
       ],
       "implementationSummary": {
-        "noimpl": 9,
-        "oneimpl": 0,
+        "noimpl": 0,
+        "oneimpl": 9,
         "twoimpl": 0
       },
       "wpt": {
@@ -5377,7 +5012,7 @@
             "title": "How to handle transforms largely changing frame size",
             "labels": [],
             "created_at": "2020-12-07T16:11:20Z",
-            "updated_at": "2020-12-07T16:11:20Z"
+            "updated_at": "2021-02-03T10:53:08Z"
           },
           {
             "href": "https://github.com/w3c/webrtc-insertable-streams/issues/49",
@@ -5531,13 +5166,15 @@
       },
       "check_runs": [
         {
-          "href": "https://github.com/w3c/webrtc-insertable-streams/runs/1728809158",
+          "href": "https://github.com/w3c/webrtc-insertable-streams/runs/1832264975",
           "conclusion": "success",
           "title": "GitHub Pages successfully built your site.",
           "summary": "Your website is ready at [`https://w3c.github.io/webrtc-insertable-streams`](https://w3c.github.io/webrtc-insertable-streams)"
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "title": "Media Capture Automation",
@@ -5620,7 +5257,9 @@
           "summary": null
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "title": "w3c/mediacapture-insertable-streams",
@@ -5685,7 +5324,7 @@
             "title": "Is using ReadableStream/WritableStream the right approach?",
             "labels": [],
             "created_at": "2020-12-01T14:38:14Z",
-            "updated_at": "2021-01-19T08:25:01Z"
+            "updated_at": "2021-01-27T11:04:41Z"
           },
           {
             "href": "https://github.com/w3c/mediacapture-insertable-streams/issues/3",
@@ -5711,7 +5350,7 @@
       },
       "check_runs": [
         {
-          "href": "https://github.com/w3c/mediacapture-insertable-streams/runs/1728809647",
+          "href": "https://github.com/w3c/mediacapture-insertable-streams/runs/1778475702",
           "conclusion": "success",
           "title": "GitHub Pages successfully built your site.",
           "summary": "Your website is ready at [`https://w3c.github.io/mediacapture-insertable-streams`](https://w3c.github.io/mediacapture-insertable-streams)"
@@ -5916,7 +5555,159 @@
           "summary": "Your website is ready at [`https://w3c.github.io/webrtc-provisional-stats`](https://w3c.github.io/webrtc-provisional-stats)"
         }
       ],
-      "repoErrors": []
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
+    },
+    {
+      "title": "WebRTC 1.0 API",
+      "shortname": "webrtc-pc",
+      "editorDraft": "https://w3c.github.io/webrtc-pc/",
+      "repo": "w3c/webrtc-pc",
+      "recTrack": true,
+      "trStatus": "ED",
+      "wptShortname": "webrtc-pc",
+      "milestones": [],
+      "hasPrPreview": true,
+      "editingTool": "respec",
+      "defaultBranch": "master",
+      "idl": false,
+      "implementationGaps": [],
+      "implementationSummary": false,
+      "wpt": {
+        "files": 0,
+        "assertions": 0,
+        "impl": {
+          "chrome": {
+            "passes": 0,
+            "total": 0,
+            "class": "passes-none"
+          },
+          "firefox": {
+            "passes": 0,
+            "total": 0,
+            "class": "passes-none"
+          },
+          "safari": {
+            "passes": 0,
+            "total": 0,
+            "class": "passes-none"
+          }
+        },
+        "issues": [],
+        "prs": []
+      },
+      "issues": {
+        "recent": [],
+        "needWork": [
+          {
+            "href": "https://github.com/w3c/webrtc-pc/issues/2613",
+            "number": 2613,
+            "title": "Share some connection infrastructure with Fetch",
+            "labels": [
+              {
+                "id": 124889630,
+                "node_id": "MDU6TGFiZWwxMjQ4ODk2MzA=",
+                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/WebRTC%20NV",
+                "name": "WebRTC NV",
+                "color": "84b6eb",
+                "default": false,
+                "description": ""
+              }
+            ],
+            "created_at": "2020-12-07T09:13:21Z",
+            "updated_at": "2020-12-14T22:37:04Z"
+          }
+        ]
+      },
+      "prs": {
+        "open": [
+          {
+            "href": "https://github.com/w3c/webrtc-pc/pull/2615",
+            "number": 2615,
+            "title": "Use proper definition reference for HTML origin concept",
+            "labels": [
+              {
+                "id": 381483688,
+                "node_id": "MDU6TGFiZWwzODE0ODM2ODg=",
+                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editorial",
+                "name": "Editorial",
+                "color": "fef2c0",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 166555932,
+                "node_id": "MDU6TGFiZWwxNjY1NTU5MzI=",
+                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editors%20can%20integrate",
+                "name": "Editors can integrate",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2020-12-14T08:34:50Z",
+            "updated_at": "2020-12-17T15:33:23Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/webrtc-pc/pulls/2615",
+              "html_url": "https://github.com/w3c/webrtc-pc/pull/2615",
+              "diff_url": "https://github.com/w3c/webrtc-pc/pull/2615.diff",
+              "patch_url": "https://github.com/w3c/webrtc-pc/pull/2615.patch"
+            }
+          },
+          {
+            "href": "https://github.com/w3c/webrtc-pc/pull/2595",
+            "number": 2595,
+            "title": "Improve markup for events definitions",
+            "labels": [
+              {
+                "id": 381483688,
+                "node_id": "MDU6TGFiZWwzODE0ODM2ODg=",
+                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editorial",
+                "name": "Editorial",
+                "color": "fef2c0",
+                "default": false,
+                "description": null
+              },
+              {
+                "id": 166555932,
+                "node_id": "MDU6TGFiZWwxNjY1NTU5MzI=",
+                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editors%20can%20integrate",
+                "name": "Editors can integrate",
+                "color": "0052cc",
+                "default": false,
+                "description": null
+              }
+            ],
+            "created_at": "2020-11-03T10:49:14Z",
+            "updated_at": "2020-11-12T15:08:53Z",
+            "pull_request": {
+              "url": "https://api.github.com/repos/w3c/webrtc-pc/pulls/2595",
+              "html_url": "https://github.com/w3c/webrtc-pc/pull/2595",
+              "diff_url": "https://github.com/w3c/webrtc-pc/pull/2595.diff",
+              "patch_url": "https://github.com/w3c/webrtc-pc/pull/2595.patch"
+            }
+          }
+        ],
+        "stalled": []
+      },
+      "check_runs": [
+        {
+          "href": "https://github.com/w3c/webrtc-pc/runs/1837961953",
+          "conclusion": "success",
+          "title": "GitHub Pages successfully built your site.",
+          "summary": "Your website is ready at [`https://w3c.github.io/webrtc-pc`](https://w3c.github.io/webrtc-pc)"
+        },
+        {
+          "href": "https://github.com/w3c/webrtc-pc/runs/1837961500",
+          "conclusion": "success",
+          "title": null,
+          "summary": null
+        }
+      ],
+      "repoErrors": [
+        "defaultbranchismaster"
+      ]
     },
     {
       "tr": "https://www.w3.org/TR/webrtc/",
@@ -5924,14 +5715,14 @@
       "shortname": "webrtc",
       "seriesShortname": "webrtc",
       "editorDraft": "https://w3c.github.io/webrtc-pc/",
-      "trStatus": "PR",
+      "trStatus": "Rec",
       "latestVersion": {
-        "href": "https://www.w3.org/TR/2020/PR-webrtc-20201215/",
-        "date": "2020-12-15",
+        "href": "https://www.w3.org/TR/2021/REC-webrtc-20210126/",
+        "date": "2021-01-26",
         "recTrack": true
       },
       "recTrack": true,
-      "repo": "w3c/webrtc-pc",
+      "repo": "",
       "wptShortname": "webrtc",
       "milestones": [
         {
@@ -5943,9 +5734,8 @@
           "date": "2020-03-30"
         }
       ],
-      "hasPrPreview": true,
-      "editingTool": "respec",
-      "defaultBranch": "master",
+      "hasPrPreview": false,
+      "editingTool": "",
       "idl": {
         "interfaces": {
           "RTCPeerConnection": 66,
@@ -6101,20 +5891,7 @@
             {
               "noimplementations": "firefox, safari",
               "members": [
-                "transport",
                 "setStreams"
-              ],
-              "severity": "warning"
-            }
-          ]
-        },
-        {
-          "interface": "RTCRtpReceiver",
-          "missing": [
-            {
-              "noimplementations": "firefox, safari",
-              "members": [
-                "transport"
               ],
               "severity": "warning"
             }
@@ -6127,9 +5904,7 @@
               "noimplementations": "firefox, safari",
               "members": [
                 "iceTransport",
-                "state",
                 "getRemoteCertificates",
-                "onstatechange",
                 "onerror"
               ],
               "severity": "warning"
@@ -6222,26 +5997,26 @@
       ],
       "implementationSummary": {
         "noimpl": 1,
-        "oneimpl": 47,
-        "twoimpl": 98
+        "oneimpl": 43,
+        "twoimpl": 102
       },
       "wpt": {
-        "files": 149,
-        "assertions": 1798,
+        "files": 151,
+        "assertions": 1817,
         "impl": {
           "chrome": {
-            "passes": 1577,
-            "total": 1796,
+            "passes": 1595,
+            "total": 1817,
             "class": "passes-lots"
           },
           "firefox": {
-            "passes": 1229,
-            "total": 1796,
+            "passes": 1247,
+            "total": 1817,
             "class": "passes-half"
           },
           "safari": {
-            "passes": 1087,
-            "total": 1760,
+            "passes": 1218,
+            "total": 1817,
             "class": "passes-half"
           }
         },
@@ -6614,33 +6389,6 @@
             ],
             "created_at": "2018-12-10T08:01:03Z",
             "updated_at": "2018-12-10T08:01:17Z"
-          },
-          {
-            "href": "https://github.com/web-platform-tests/wpt/issues/14397",
-            "number": 14397,
-            "title": "Make sure we have good connectionState test coverage",
-            "labels": [
-              {
-                "id": 80134264,
-                "node_id": "MDU6TGFiZWw4MDEzNDI2NA==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/webrtc",
-                "name": "webrtc",
-                "color": "ededed",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 79824268,
-                "node_id": "MDU6TGFiZWw3OTgyNDI2OA==",
-                "url": "https://api.github.com/repos/web-platform-tests/wpt/labels/wg-webrtc",
-                "name": "wg-webrtc",
-                "color": "0052cc",
-                "default": false,
-                "description": null
-              }
-            ],
-            "created_at": "2018-12-06T15:14:27Z",
-            "updated_at": "2018-12-07T11:06:08Z"
           }
         ],
         "prs": [
@@ -6810,140 +6558,7 @@
             }
           }
         ]
-      },
-      "issues": {
-        "recent": [],
-        "needWork": [
-          {
-            "href": "https://github.com/w3c/webrtc-pc/issues/2613",
-            "number": 2613,
-            "title": "Share some connection infrastructure with Fetch",
-            "labels": [
-              {
-                "id": 124889630,
-                "node_id": "MDU6TGFiZWwxMjQ4ODk2MzA=",
-                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/WebRTC%20NV",
-                "name": "WebRTC NV",
-                "color": "84b6eb",
-                "default": false,
-                "description": ""
-              }
-            ],
-            "created_at": "2020-12-07T09:13:21Z",
-            "updated_at": "2020-12-14T22:37:04Z"
-          }
-        ]
-      },
-      "prs": {
-        "open": [
-          {
-            "href": "https://github.com/w3c/webrtc-pc/pull/2621",
-            "number": 2621,
-            "title": "Prepare final RFC references",
-            "labels": [
-              {
-                "id": 381483688,
-                "node_id": "MDU6TGFiZWwzODE0ODM2ODg=",
-                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editorial",
-                "name": "Editorial",
-                "color": "fef2c0",
-                "default": false,
-                "description": null
-              }
-            ],
-            "created_at": "2021-01-18T15:24:12Z",
-            "updated_at": "2021-01-19T11:13:15Z",
-            "pull_request": {
-              "url": "https://api.github.com/repos/w3c/webrtc-pc/pulls/2621",
-              "html_url": "https://github.com/w3c/webrtc-pc/pull/2621",
-              "diff_url": "https://github.com/w3c/webrtc-pc/pull/2621.diff",
-              "patch_url": "https://github.com/w3c/webrtc-pc/pull/2621.patch"
-            }
-          },
-          {
-            "href": "https://github.com/w3c/webrtc-pc/pull/2615",
-            "number": 2615,
-            "title": "Use proper definition reference for HTML origin concept",
-            "labels": [
-              {
-                "id": 381483688,
-                "node_id": "MDU6TGFiZWwzODE0ODM2ODg=",
-                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editorial",
-                "name": "Editorial",
-                "color": "fef2c0",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 166555932,
-                "node_id": "MDU6TGFiZWwxNjY1NTU5MzI=",
-                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editors%20can%20integrate",
-                "name": "Editors can integrate",
-                "color": "0052cc",
-                "default": false,
-                "description": null
-              }
-            ],
-            "created_at": "2020-12-14T08:34:50Z",
-            "updated_at": "2020-12-17T15:33:23Z",
-            "pull_request": {
-              "url": "https://api.github.com/repos/w3c/webrtc-pc/pulls/2615",
-              "html_url": "https://github.com/w3c/webrtc-pc/pull/2615",
-              "diff_url": "https://github.com/w3c/webrtc-pc/pull/2615.diff",
-              "patch_url": "https://github.com/w3c/webrtc-pc/pull/2615.patch"
-            }
-          },
-          {
-            "href": "https://github.com/w3c/webrtc-pc/pull/2595",
-            "number": 2595,
-            "title": "Improve markup for events definitions",
-            "labels": [
-              {
-                "id": 381483688,
-                "node_id": "MDU6TGFiZWwzODE0ODM2ODg=",
-                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editorial",
-                "name": "Editorial",
-                "color": "fef2c0",
-                "default": false,
-                "description": null
-              },
-              {
-                "id": 166555932,
-                "node_id": "MDU6TGFiZWwxNjY1NTU5MzI=",
-                "url": "https://api.github.com/repos/w3c/webrtc-pc/labels/Editors%20can%20integrate",
-                "name": "Editors can integrate",
-                "color": "0052cc",
-                "default": false,
-                "description": null
-              }
-            ],
-            "created_at": "2020-11-03T10:49:14Z",
-            "updated_at": "2020-11-12T15:08:53Z",
-            "pull_request": {
-              "url": "https://api.github.com/repos/w3c/webrtc-pc/pulls/2595",
-              "html_url": "https://github.com/w3c/webrtc-pc/pull/2595",
-              "diff_url": "https://github.com/w3c/webrtc-pc/pull/2595.diff",
-              "patch_url": "https://github.com/w3c/webrtc-pc/pull/2595.patch"
-            }
-          }
-        ],
-        "stalled": []
-      },
-      "check_runs": [
-        {
-          "href": "https://github.com/w3c/webrtc-pc/runs/1729042679",
-          "conclusion": "success",
-          "title": "GitHub Pages successfully built your site.",
-          "summary": "Your website is ready at [`https://w3c.github.io/webrtc-pc`](https://w3c.github.io/webrtc-pc)"
-        },
-        {
-          "href": "https://github.com/w3c/webrtc-pc/runs/1729041859",
-          "conclusion": "failure",
-          "title": "Validate and Publish",
-          "summary": "There are 1 failures, 0 warnings, and 0 notices."
-        }
-      ],
-      "repoErrors": []
+      }
     }
   ],
   "config": {
