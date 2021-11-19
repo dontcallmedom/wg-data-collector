@@ -2,6 +2,7 @@
   "dependencies": {
     "@octokit/plugin-throttling": "^3.3.4",
     "@octokit/rest": "^18.0.9",
+    "idl-implementation-tracker": "git+https://github.com/dontcallmedom/webrtc-impl-tracker.git",
     "json-pointer": "^0.6.1",
     "node-fetch": "^2.6.1",
     "node-w3capi": "^1.9.0",
@@ -9,7 +10,7 @@
   },
   "devDependencies": {
     "proxyquire": "^2.1.3",
-    "reffy": "^1.3.1",
+    "reffy": "^5.2.0",
     "sinon": "^9.2.1"
   }
 }
