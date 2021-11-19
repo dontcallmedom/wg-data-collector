@@ -2,7 +2,7 @@ const wg = require("./lib/wg");
 const repo = require("./lib/repo");
 const wpt = require("./lib/wpt");
 const idl = require("./lib/idl");
-const confluence = require("./lib/confluence");
+const idlImpl = require("./lib/idl-impl");
 
 // WG id
 const gid = process.argv[2];
@@ -22,8 +22,8 @@ const results = {specifications:[], config: wgConfig[gid]};
     // Implementations
     spec.implementationGaps = [];
     spec.implementationSummary = false;
-    if (wgConfig[gid] && wgConfig[gid].confluence) {
-      Object.assign(spec, await confluence(spec.shortname));
+    if (wgConfig[gid] && wgConfig[gid].idlImpl) {
+      Object.assign(spec, await idlImpl(spec.shortname));
     }
 
     if (spec.wptShortname) {

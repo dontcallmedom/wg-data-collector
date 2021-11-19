@@ -1,6 +1,6 @@
 {
   "47318": {
-    "confluence": true,
+    "idlImpl": true,
     "ignoreIssuesLabels": ["ready for pr", "editorial", "pr exists", "icebox"],
     "ignoreRepoErrors": ["unprotectedbranchforadmin", "norequiredreview", "nocodeofconduct"]
   }
